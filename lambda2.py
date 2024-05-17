@@ -14,9 +14,7 @@ def lambda_hander(event, context):
     image_bytes = s3.get_object(Bucket=bucketName, Key=objectKey)['Body'].read()
     response = rekognition.search_faces_by_image(
         CollectionId='amber-alerts',
-        Image={
-            'Bytes': image_bytes
-        }
+        Image={'Bytes': image_binary}
     )
     
     for match in response['FaceMatches']:
@@ -33,8 +31,8 @@ def lambda_hander(event, context):
                 'Message': 'Coincide con una persona en Alerta Amber',
                 'reporte': face['Item']['reporte']
             })
-        print("No coincide con una persona en Alerta Amber")
-        return buildResponse(403, {
+    print("No coincide con una persona en Alerta Amber")
+    return buildResponse(403, {
             'Message': 'No coincide con una persona en Alerta Amber'
         })
         
