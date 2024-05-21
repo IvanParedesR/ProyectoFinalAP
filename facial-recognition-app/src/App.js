@@ -27,7 +27,7 @@ function App() {
     const ImageName = `${ImageNameKey}-${image.name}`;
     setIsloading(true);
     fetch(
-      `${justCorsURL}/${AMZURL}/itam-proyecto-saraluz-test/${ImageName}`,
+      `${justCorsURL}${AMZURL}/itam-proyecto-saraluz-test/${ImageName}`,
       {
         method: "PUT",
         mode: "cors",
@@ -78,7 +78,7 @@ function App() {
 
   async function authenticate(imageName) {
     const requestUrl =
-      `${justCorsURL}/${AMZURL}/amber?` +
+      `${justCorsURL}${AMZURL}/amber?` +
       new URLSearchParams({
         objectKey: `${imageName}`,
       });
