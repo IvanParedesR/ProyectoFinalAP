@@ -1,4 +1,4 @@
-''' Este script transforma los datos scrapeados de los PDFs de 
+''' Este script transforma los datos scrapeados de los PDFs de
 la página de Alerta Amber y los guarda en un archivo CSV'''
 import os
 import pandas as pd
@@ -14,19 +14,33 @@ pdf_dataframe = pd.read_csv(CSV_FILE_PATH)
 print(pdf_dataframe.head())
 
 # Separar datos en columnas
-pdf_dataframe[["A", "B"]] = pdf_dataframe["Text"].str.split(": ", n=1, expand=True)
-pdf_dataframe[["reporte", "B"]] = pdf_dataframe["B"].str.split("\n", n=1, expand=True)
-pdf_dataframe[["A", "B"]] = pdf_dataframe["B"].str.split(":", n=1, expand=True)
-pdf_dataframe[["fecha_act", "B"]] = pdf_dataframe["B"].str.split("\n", n=1, expand=True)
+pdf_dataframe[["A", "B"]] = (
+    pdf_dataframe["Text"].str.split(": ", n=1, expand=True)
+)
+pdf_dataframe[["reporte", "B"]] = (
+    pdf_dataframe["B"].str.split("\n", n=1, expand=True)
+)
+pdf_dataframe[["A", "B"]] = (
+    pdf_dataframe["B"].str.split(":", n=1, expand=True)
+)
+pdf_dataframe[["fecha_act", "B"]] = (
+    pdf_dataframe["B"].str.split("\n", n=1, expand=True)
+)
 pdf_dataframe[["nombre", "B"]] = pdf_dataframe["B"].str.split(
     "FECHA DE NACIMIENTO:", n=1, expand=True
 )
 pdf_dataframe[["fecha_nac", "B"]] = pdf_dataframe["B"].str.split(
     "EDAD:", n=1, expand=True
 )
-pdf_dataframe[["edad", "B"]] = pdf_dataframe["B"].str.split("GÉNERO:", n=1, expand=True)
-pdf_dataframe[["genero", "B"]] = pdf_dataframe["B"].str.split("FECHA", n=1, expand=True)
-pdf_dataframe[["A", "B"]] = pdf_dataframe["B"].str.split(":", n=1, expand=True)
+pdf_dataframe[["edad", "B"]] = (
+    pdf_dataframe["B"].str.split("GÉNERO:", n=1, expand=True)
+)
+pdf_dataframe[["genero", "B"]] = (
+    pdf_dataframe["B"].str.split("FECHA", n=1, expand=True)
+)
+pdf_dataframe[["A", "B"]] = (
+    pdf_dataframe["B"].str.split(":", n=1, expand=True)
+)
 pdf_dataframe[["fecha_hechos", "B"]] = pdf_dataframe["B"].str.split(
     "LUGAR", n=1, expand=True
 )
@@ -43,21 +57,27 @@ pdf_dataframe[["tipo_cabello", "B"]] = pdf_dataframe["B"].str.split(
 pdf_dataframe[["color_cabello", "B"]] = pdf_dataframe["B"].str.split(
     "COLOR", n=1, expand=True
 )
-pdf_dataframe[["A", "B"]] = pdf_dataframe["B"].str.split("OJOS:", n=1, expand=True)
+pdf_dataframe[["A", "B"]] = (
+    pdf_dataframe["B"].str.split("OJOS:", n=1, expand=True)
+)
 pdf_dataframe[["color_ojos", "B"]] = pdf_dataframe["B"].str.split(
     "ESTATURA:", n=1, expand=True
 )
 pdf_dataframe[["estatura", "B"]] = pdf_dataframe["B"].str.split(
     "PESO:", n=1, expand=True
 )
-pdf_dataframe[["peso", "B"]] = pdf_dataframe["B"].str.split("SEÑAS", n=1, expand=True)
+pdf_dataframe[["peso", "B"]] = (
+    pdf_dataframe["B"].str.split("SEÑAS", n=1, expand=True)
+)
 pdf_dataframe[["A", "B"]] = pdf_dataframe["B"].str.split(
     "PARTICULARES:", n=1, expand=True
 )
 pdf_dataframe[["senas_part", "B"]] = pdf_dataframe["B"].str.split(
     "RESUMEN", n=1, expand=True
 )
-pdf_dataframe[["A", "B"]] = pdf_dataframe["B"].str.split("HECHOS:", n=1, expand=True)
+pdf_dataframe[["A", "B"]] = (
+    pdf_dataframe["B"].str.split("HECHOS:", n=1, expand=True)
+)
 pdf_dataframe[["resumen_hechos", "B"]] = pdf_dataframe["B"].str.split(
     "RESUMEN", n=1, expand=True
 )
@@ -85,7 +105,9 @@ pdf_dataframe[["sospechoso", "B"]] = pdf_dataframe["sospechoso"].str.split(
 pdf_dataframe[["A", "sospechoso_sp"]] = pdf_dataframe["B"].str.split(
     "PARTICULARES:", n=1, expand=True
 )
-pdf_dataframe[["A", "num"]] = pdf_dataframe["id_file"].str.split("_", n=1, expand=True)
+pdf_dataframe[["A", "num"]] = (
+    pdf_dataframe["id_file"].str.split("_", n=1, expand=True)
+)
 pdf_dataframe["image_file"] = "image_" + pdf_dataframe["num"] + ".jpg"
 
 # Quitar '\n'
@@ -113,9 +135,13 @@ columns_to_process = [
 
 # Iterate over columns and replace '\n'
 for column in columns_to_process:
-    pdf_dataframe[column] = pdf_dataframe[column].str.replace(r"\n", " ", regex=True)
+    pdf_dataframe[column] = (
+        pdf_dataframe[column].str.replace(r"\n", " ", regex=True)
+    )
 
-pdf_dataframe = pdf_dataframe.map(lambda x: x.strip() if isinstance(x, str) else x)
+pdf_dataframe = (
+    pdf_dataframe.map(lambda x: x.strip() if isinstance(x, str) else x)
+)
 
 # Renombrar y quitar duplicados
 df1 = pdf_dataframe[
@@ -147,7 +173,7 @@ df1 = pdf_dataframe[
 
 df1 = df1.drop_duplicates(subset=["reporte"], keep="first")
 
-### Revisar y filtrar qué imágenes queremos antes de descargar
+# Revisar y filtrar qué imágenes queremos antes de descargar
 chiapas = df1[df1["lugar"] == "CHIAPAS"]
 prueba_positiva = df1[df1["reporte"] == "AAMX398"]
 
@@ -159,5 +185,7 @@ chiapas.to_csv(csv_file_path, index=False)
 print(f"\nDataFrame saved to CSV file at: {CSV_FILE_PATH}")
 
 result = chiapas.reset_index().to_json(
-    r"./facial-recognition-app/src/amber.json", orient="table", force_ascii=False
+    r"./facial-recognition-app/src/amber.json",
+    orient="table",
+    force_ascii=False
 )

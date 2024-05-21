@@ -1,4 +1,5 @@
-'''Este script descarga las imágenes de los números de Alerta Amber y las sube a un bucket de S3'''
+'''Este script descarga las imágenes de los números de
+Alerta Amber y las sube a un bucket de S3'''
 import pandas as pd
 import boto3
 from src.utils import download_images_for_numbers
@@ -12,7 +13,7 @@ chiapas = pd.read_csv(CSV_FILE_PATH)
 # Display the first few rows of the DataFrame
 print(chiapas.head())
 
-### Crear lista para descargar imágenes
+# Crear lista para descargar imágenes
 
 df2 = pd.DataFrame(chiapas["id_file"])
 df2[["digitos", "num"]] = df2["id_file"].str.split("_", n=1, expand=True)
