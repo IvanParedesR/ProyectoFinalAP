@@ -21,7 +21,7 @@ else:
 
     if pdf_dataframe is not None:
         print("\nData from PDFs:")
-        print(pdf_dataframe.head())  # Display the first few rows of the DataFrame
+        print(pdf_dataframe.head())
 
 csv_file_path = os.path.join(DATA_DIRECTORY, "pdf_data_raw.csv")
 pdf_dataframe.to_csv(csv_file_path, index=False)
