@@ -1,16 +1,13 @@
-import os
-import requests
-import PyPDF2
+'''Este script descarga las imágenes de los números de Alerta Amber y las sube a un bucket de S3'''
 import pandas as pd
-import numpy as np
-from json import loads, dumps
+import boto3
 from src.utils import download_images_for_numbers
 
 # Path to the CSV file
-csv_file_path = "./data/chiapas.csv"
+CSV_FILE_PATH = "./data/chiapas.csv"
 
 # Read the CSV file into a DataFrame
-chiapas = pd.read_csv(csv_file_path)
+chiapas = pd.read_csv(CSV_FILE_PATH)
 
 # Display the first few rows of the DataFrame
 print(chiapas.head())
@@ -28,7 +25,7 @@ list_3_digits = df_B["num"].tolist()
 
 
 # Folder to save images
-images_folder = "./data/images"
+IMAGES_FOLDER = "./data/images"
 
 # para 3 dígitos
 # List of numbers
@@ -36,18 +33,16 @@ numbers_to_download = list_3_digits + [398]
 
 
 # Download images for the specified numbers
-download_images_for_numbers(numbers_to_download, images_folder, 3)
+download_images_for_numbers(numbers_to_download, IMAGES_FOLDER, 3)
 
 # para 4 dígitos
 # List of numbers
 numbers_to_download = list_4_digits
 
 # Download images for the specified numbers
-download_images_for_numbers(numbers_to_download, images_folder, 4)
+download_images_for_numbers(numbers_to_download, IMAGES_FOLDER, 4)
 
 # Abres un cliente de S3
-import boto3
-
 session = boto3.Session(profile_name="arquitectura", region_name="us-east-1")
 s3 = session.client("s3")
 

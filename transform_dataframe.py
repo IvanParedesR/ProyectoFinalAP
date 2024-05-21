@@ -1,15 +1,14 @@
+''' Este script transforma los datos scrapeados de los PDFs de 
+la página de Alerta Amber y los guarda en un archivo CSV'''
 import os
-import requests
-import PyPDF2
 import pandas as pd
-import numpy as np
-from json import loads, dumps
 
 # Path to the CSV file
-csv_file_path = "./data/pdf_data_raw.csv"
+CSV_FILE_PATH = "./data/pdf_data_raw.csv"
+DATA_DIRECTORY = "./data"
 
 # Read the CSV file into a DataFrame
-pdf_dataframe = pd.read_csv(csv_file_path)
+pdf_dataframe = pd.read_csv(CSV_FILE_PATH)
 
 # Display the first few rows of the DataFrame
 print(pdf_dataframe.head())
@@ -148,23 +147,16 @@ df1 = pdf_dataframe[
 
 df1 = df1.drop_duplicates(subset=["reporte"], keep="first")
 
-df1
-
 ### Revisar y filtrar qué imágenes queremos antes de descargar
 chiapas = df1[df1["lugar"] == "CHIAPAS"]
-chiapas
-
 prueba_positiva = df1[df1["reporte"] == "AAMX398"]
-prueba_positiva
 
 chiapas = pd.concat([chiapas, prueba_positiva], ignore_index=True)
 len(chiapas)
 
-data_directory = "./data"
-csv_file_path = os.path.join(data_directory, "chiapas.csv")
+csv_file_path = os.path.join(DATA_DIRECTORY, "chiapas.csv")
 chiapas.to_csv(csv_file_path, index=False)
-print(f"\nDataFrame saved to CSV file at: {csv_file_path}")
-
+print(f"\nDataFrame saved to CSV file at: {CSV_FILE_PATH}")
 
 result = chiapas.reset_index().to_json(
     r"./facial-recognition-app/src/amber.json", orient="table", force_ascii=False
