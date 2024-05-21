@@ -79,6 +79,10 @@ Data dictionary for `restaurants.csv`
 
 - Based on the objective of this analysis, the pipeline could be scheduled to run with Airflow every start of a new month.
 
+## Pylint y Flake8
+
+![pylint](aws_screanshots/pylint.png)
+![flake8](aws_screanshots/flake8.png)
 
 
 --------------------------------------------------------------------------------
@@ -103,3 +107,4 @@ aca viene más información para el working backwards y la presentación, pero t
 https://derechosinfancia.org.mx/v1/grupo-de-trabajo/
 
 
+#
