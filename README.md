@@ -26,11 +26,11 @@ La desaparición de menores en México constituye una problemática en crecimien
     + Una vez que ha descargado todos los pdf's con información, los lee y coloca el texto de un pdf en una celda de un dataframe. 
     + Finalmente guarda el dataframe con los textos de los reportes en la carpeta de `data` con el nombre `pdf_data_raw.csv`.
 - `transform_dataframe.py`: Acomoda los textos en columnas para que sea fácil accesar a la información de los reportes, filtra los reportes pertenecientes a Chiapas y los guarda como `chiapas.csv` en la carpeta de `data`, y  como `amber.json` en la carpeta de `facial-recognition-app/src`
-- `extract_load_images.py`: Descarga las imágenes de los reportes de Chiapas y los sube a S3.
+- `extract_load_images.py`: Descarga las imágenes de la página wed de Alertas Amber de los reportes de Chiapas y los sube a S3.
     + Primero lee el archivo en la carpeta de `data` llamado `chiapas.csv`
     + Luego con la información de éste archivo descarga las imágenes de menores desaparecidos con Alerta Amber en Chiapas
     + Finalmente sube estas imágenes a S3.
-- `lamda_amber_registration.py`: Esta Lambda se activa cada que se suben imágenes al bucket `itam-proyecto-saraluz`, y obtiene una "huella digital" de la cara y le asigna un id, en este caso el número de reporte de Alerta Amber.
+- `lamda_amber_registration.py`: Esta Lambda se activa cada que se suben imágenes al bucket `itam-proyecto-saraluz`, y obtiene una "huella digital" de la cara y le asigna un id, en este caso el número de reporte de Alerta Amber, esta información se guarda en DynamoBD.
 ### Proceso de Identificación
 - Colocar `npm start` en terminal estando dentro de la carpeta `facial-recognition-app`
 - Se abrirá la aplicación `http://localhost:3000`
