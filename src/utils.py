@@ -1,17 +1,35 @@
-"""
-Este script contiene las funciones necesarias para realizar el scrapeo
-de los PDFs y las imágenes de la página web de Alerta Amber de la
-Fiscalía General de la República de México. Además, contiene una función
-para leer los PDFs descargados y extraer el texto de los mismos.
-"""
-
 import os
 import requests
+from datetime import datetime
+import logging
 import PyPDF2
 import pandas as pd
 
 
-def scrapeado_pdf(digitos, letra):
+# Función para configurar logging
+def get_logger(archivo_log):
+    """This function configures the logging module to save
+    the logs in a file"""
+    now = datetime.now()
+    date_time = now.strftime("%Y%m%d_%H%M%S")
+    log_train_file_name = f"logs/{date_time}_{archivo_log}.log"
+    logging.basicConfig(
+        filename=log_train_file_name,
+        level=logging.DEBUG,
+        filemode="w",
+        format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
+    )
+    logger = logging.getLogger(__name__)
+    handler = logging.FileHandler(log_train_file_name)
+    formatter = logging.Formatter(
+        "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+    )
+    handler.setFormatter(formatter)
+    logger.addHandler(handler)
+    return logger
+
+
+def scrapeado_pdf(digitos, letra, logger):
     """
     Esta función descarga los PDFs de la página web de Alerta Amber.
     """
@@ -27,8 +45,7 @@ def scrapeado_pdf(digitos, letra):
         if not os.path.exists(folder):
             os.makedirs(folder)
 
-    links = [base_url_pdf +
-             str(i).zfill(digitos) for i in range(1, 10**digitos)]
+    links = [base_url_pdf + str(i).zfill(digitos) for i in range(1, 10**digitos)]
 
     for index, pdf_link in enumerate(links, start=1):
         response_pdf = requests.get(pdf_link, timeout=10)
@@ -36,7 +53,7 @@ def scrapeado_pdf(digitos, letra):
             pdf_path = os.path.join(pdf_folder, f"{letra}_{index}.pdf")
             with open(pdf_path, "wb") as pdf_file:
                 pdf_file.write(response_pdf.content)
-            print("Downloaded PDF:", pdf_path)
+            logger.info("Downloaded PDF: %s", pdf_path)
 
             try:
                 with open(pdf_path, "rb") as pdf_file:
@@ -47,14 +64,14 @@ def scrapeado_pdf(digitos, letra):
 
                     if "Publicación no disponible" in text:
                         os.remove(pdf_path)
-                        print("Deleted PDF:", pdf_path)
+                        logger.info("Deleted PDF: %s", pdf_path)
             except PyPDF2.errors.PdfReadError:
-                print("Failed to read PDF:", pdf_path)
+                logger.info("Failed to read PDF: %s", pdf_path)
         else:
-            print("Failed to retrieve data for PDF link:", pdf_link)
+            logger.info("Failed to retrieve data for PDF link: %s", pdf_link)
 
 
-def read_pdfs_from_directory(directory):
+def read_pdfs_from_directory(directory, logger):
     """
     Esta función lee los PDFs descargados y extrae el texto de los mismos.
     """
@@ -62,7 +79,7 @@ def read_pdfs_from_directory(directory):
     pdf_files = [file for file in files if file.lower().endswith(".pdf")]
 
     if not pdf_files:
-        print("No PDF files found in the directory.")
+        logger.info("No PDF files found in the directory.")
         return None
 
     pdf_data_list = []
@@ -111,4 +128,4 @@ def download_images_for_numbers(numbers, images_folder, digits):
             with open(image_path, "wb") as img_file:
                 img_file.write(response_image.content)
         else:
-            print("Failed to retrieve data for image link:", image_link)
+            logger.info("Failed to retrieve data for image link:", image_link)

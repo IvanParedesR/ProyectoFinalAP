@@ -1,0 +1,3 @@
+2024-05-22 13:04:55,473 - src.utils - INFO - Comenzando limpieza ...
+2024-05-22 13:04:55,616 - src.utils - INFO - 
+DataFrame saved to CSV file at: ./data/pdf_data_raw.csv

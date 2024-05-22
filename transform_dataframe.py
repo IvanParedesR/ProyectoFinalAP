@@ -2,6 +2,11 @@
 la página de Alerta Amber y los guarda en un archivo CSV'''
 import os
 import pandas as pd
+from src.utils import get_logger
+
+# Configurar logging
+logger = get_logger("TransformDataFrame")
+logger.info("Comenzando limpieza ...")
 
 # Path to the CSV file
 CSV_FILE_PATH = "./data/pdf_data_raw.csv"
@@ -9,9 +14,6 @@ DATA_DIRECTORY = "./data"
 
 # Read the CSV file into a DataFrame
 pdf_dataframe = pd.read_csv(CSV_FILE_PATH)
-
-# Display the first few rows of the DataFrame
-print(pdf_dataframe.head())
 
 # Separar datos en columnas
 pdf_dataframe[["A", "B"]] = (
@@ -182,7 +184,7 @@ len(chiapas)
 
 csv_file_path = os.path.join(DATA_DIRECTORY, "chiapas.csv")
 chiapas.to_csv(csv_file_path, index=False)
-print(f"\nDataFrame saved to CSV file at: {CSV_FILE_PATH}")
+logger.info(f"\nDataFrame saved to CSV file at: {CSV_FILE_PATH}")
 
 result = chiapas.reset_index().to_json(
     r"./facial-recognition-app/src/amber.json",
