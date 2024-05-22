@@ -107,6 +107,25 @@ Diccionario de datos para `chiapas.csv`
 
 - Para correr los archivos en python se puede crear un ambiente en `conda` con la información en el archivo `environment.yml` en la carpeta de `requirements`
 
+- Para correr los scripts de python se requiere:
+    + python=3.11
+    + pandas
+    + numpy
+    + pytest
+    + ipython
+    + jupyterlab
+    + matplotlib
+    + plotly
+    + ipyleaflet
+    + pylint
+    + autopep8
+    + lxml
+    + boto3
+    + awswrangler
+    + PyPDF2
+    + json
+    + requests
+
 - Para correr la api se requiere:
     + "@testing-library/jest-dom": "^5.17.0"
     + "@testing-library/react": "^13.4.0"
@@ -128,7 +147,3 @@ https://docs.google.com/document/d/1iUAD5lQKMfh_aG3wlN3bzLpjRmP-iITJtGmMrn_kBBs/
 
 ## Presentación
 https://docs.google.com/presentation/d/1sboQzMv_p1cDkurnLl7EnGX2L56W2bM19JhrGj4lsiE/edit?usp=sharing
-
-
-
-#
