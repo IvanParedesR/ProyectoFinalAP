@@ -62,7 +62,7 @@ La desaparición de menores en México constituye una problemática en crecimien
  
 La arquitectura de este proyecto se encuentra en el siguiente diagrama:
 
-![Data Model](figs/data_model.png)
+![Data Model](data_model.png)
 
 Diccionario de datos para `chiapas.csv`
 
