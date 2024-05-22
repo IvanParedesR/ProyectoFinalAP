@@ -33,11 +33,28 @@
 
 ## Estructura del repositorio
 
-`config`: Configuration files for data and aws services.
-`data`: The inputs, preprocessing and outputs are stored here.
-    `input`: Here is where the original `json` files are stored for further preprocessing.
-    `preprocessing`: Intermediate tables such as catalogs are stored here.
-    `output`: Cleaned data are stored here as parquet files.
+.
+├── aws_screanshots: capturas de pantalla del proceso para crear los buckets, lambdas, api.
+├── data: imágenes, csvs y pdf
+├── entregables
+├── extract_load_images.py
+├── extract_read_pdf.py
+├── facial-recognition-app
+├── info1.jpg
+├── info2.jpg
+├── info3.jpg
+├── lambda_amber_authentication.py
+├── lambda_amber_registration.py
+├── LICENSE
+├── logs
+├── node_modules
+├── notebooks
+├── README.md
+├── referencias
+├── report
+├── requirements
+├── src
+└── transform_dataframe.py
 
 ## Arquitectura de la solución
  
@@ -86,13 +103,20 @@ Diccionario de datos para `chiapas.csv`
 
 ## Escenario de Producción
 
-- Assuming that Yelp data can be extracted periodically, this pipeline can be executed in AWS services using a EMR cluster with Spark.
+- Asumimos que la información se scrapeará de manera semanal, y se puede correr los archivos en el órden mencionado en la sección de Pasos.
 
-- Data should be stored in the data lake in S3, using the code `S00_stage_data.ipynb`.
+- Para correr los archivos en python se puede crear un ambiente en `conda` con la información en el archivo `environment.yml` en la carpeta de `requirements`
 
-- The ETL in `S01_etl.ipynb` already has the code to launch the EMR cluster, and in `config` the configuration files to setup the credentials and variables for the infrastructure will be stored.
-
-- Based on the objective of this analysis, the pipeline could be scheduled to run with Airflow every start of a new month.
+- Para correr la api se requiere:
+    + "@testing-library/jest-dom": "^5.17.0"
+    + "@testing-library/react": "^13.4.0"
+    + "@testing-library/user-event": "^13.5.0"
+    + "axios": "^1.6.8"
+    + "dotenv": "^16.4.5"
+    + "react": "^18.3.1"
+    + "react-dom": "^18.3.1"
+    + "react-scripts": "5.0.1"
+    + "web-vitals": "^2.1.4"
 
 ## Pylint y Flake8
 
