@@ -13,20 +13,23 @@
 
 ## Pasos
 
-- `S01_etl.ipynb`: Extract, transform and load Yelp datasets.
-    + Here `json` files are read and converted to parquet files. Data is partitioned by metropolitan_area and year to optimize Spark performance.
-    + Data quality checks are perfomed and data is cleaned. Text variables are converted to lower case, json lists are unnested in yelp_academic_dataset_business. Date and time variables are extracted from timestamp.
-    + Business metropolitan areas a created using KMeans algorithm, and a catalog is created
-    + Cleaned datasets are stored in output for further analysis.
-- `S02_eda.ipynb`: A brief exploratory analysis is conducted on the partitioned parquets and cleaned data to learn more about the data, aggregations and quality issues.
-- `S03_data_model.ipynb`: The data model is implemented the dimensions and a restaurant fact table is created.
-    + Create number of business checkins table
-    + Create number of business tips table
-    + Create number of business reviews table
-    + Create business union table: Here the fact table is built for all business.
-    + Create a Restaurants Catalog: A catalog for all restaurant business is created, labelling observations manually.
-    + Create restaurants table. The final fact table is stored in a dataset in the following address `data/output/restaurants.csv`. 
-- `S04_analytics.Rmd`: This is the analytics code where the top 10 most reviewed restaurants for each metropolitan is generated. The final report can be consulted in `S04_analytics.html`
+### Proceso de registro
+- `extract_read_pdf.py`: Scrapea los pdf's de la página web de Alertas Amber
+    + Como hay alertas con 3 y 4 dígitos, scrapea primero los de 3 dígitos y luego los de 4.
+    + Descarga uno por uno los pdf y revisa si tienen contenido o si son números con un reporte vacío, si son números con un reporte vacío los borra.
+    + Una vez que ha descargado todos los pdf's con información, los lee y coloca el texto de un pdf en una celda de un dataframe. 
+    + Finalmente guarda el dataframe con los textos de los reportes en la carpeta de `data` con el nombre `pdf_data_raw.csv`.
+- `transform_dataframe.py`: Acomoda los textos en columnas para que sea fácil accesar a la información de los reportes, filtra los reportes pertenecientes a Chiapas y los guarda como `chiapas.csv` en la carpeta de `data`, y  como `amber.json` en la carpeta de `facial-recognition-app/src`
+- `extract_load_images.py`: Descarga las imágenes de los reportes de Chiapas y los sube a S3.
+    + Primero lee el archivo en la carpeta de `data` llamado `chiapas.csv`
+    + Luego con la información de éste archivo descarga las imágenes de menores desaparecidos con Alerta Amber en Chiapas
+    + Finalmente sube estas imágenes a S3.
+- `lamda_amber_registration.py`: Esta Lambda se activa cada que se suben imágenes al bucket `itam-proyecto-saraluz`, y obtiene una "huella digital" de la cara y le asigna un id, en este caso el número de reporte de Alerta Amber.
+### Proceso de Identificación
+- Colocar `npm start` en terminal estando dentro de la carpeta `facial-recognition-app`
+- Se abrirá la aplicación `http://localhost:3000`
+- Seleccionar una imagen para revisar de acuerdo con las instrucciones.
+- Esta imágen se sube a S3 al bucket `itam-proyecto-saraluz-test` y la api en Gateway llama a la `lambda_amber_authentication.py`, la cual identifica o no a la persona, si logra identificar a la persona se desplegarán los datos de la alerta amber.
 
 ## Estructura del repositorio
 
@@ -36,38 +39,50 @@
     `preprocessing`: Intermediate tables such as catalogs are stored here.
     `output`: Cleaned data are stored here as parquet files.
 
-## Modelo de datos
+## Arquitectura de la solución
  
-The data model for this project is explained in the following diagram.
+La arquitectura de este proyecto se encuentra en el siguiente diagrama:
 
 ![Data Model](figs/data_model.png)
 
-Data dictionary for `restaurants.csv`
+Diccionario de datos para `chiapas.csv`
 
-- `categories`: character. Restaurants category.
-- `cluster`: double. Id metropolitan area.
-- `metropolitan_area`: character. Name of metropolitan area.
-- `business_id`: character. Business id.
-- `name`: character. Name of business.
-- `latitude`: double. Latitude.
-- `longitude`: double. Longitude.
-- `review_count`: double. Number of reviews that the restaurant has.
-- `stars`: double. Average stars that the restaurant has.
-- `year`: double. Year of the data.
-- `num_checkins`: double. Number of checkins for the given year.
-- `num_tips`: double. Number of tips that the users have written given the year.
-- `num_reviews`: double. Number of user reviews in the dataset for this business in the given year.
-- `mean_stars_reviews`: double. Number of mean stars for the user reviews.
-- `is_restrautrant`: logical. Is this business a restaurant.
-
+- `id_file`: string. "A" ó "B" seguido de un guión bajo, seguido del número de reporte a 4 dígitos si es A y 3 si es B.  
+- `image_file`: string. "image_" seguido del número de reporte.
+- `reporte`: string. "AAMX" seguido del número de reporte.
+- `fecha_act`: string. Fecha de activación.
+- `nombre`: string. Nombre del menos de edad desaparecido.
+- `fecha_nac`: string. Fecha de nacimiento.
+- `edad`: string. Edad de desaparecido.
+- `genero`: string. Masculino o Femenino.
+- `fecha_hechos`: string. Fecha de los hechos.
+- `lugar`: string. Estado
+- `nacionalidad`: string. Nacionalidad
+- `tipo_cabello`: string. Tipo de Cabello.
+- `color_cabello`: string. Color del cabello.
+- `color_ojos`: string. Color de ojos.
+- `estatura`: string. Estatura.
+- `peso`: string. Peso.
+- `senas_part`: string. Señas particulares del desaparecido.
+- `acompanante`: string. Acompañante.
+- `acompanante_sp`: string. Señas particulares del acompañante.
+- `sospechoso`: string. Nombre del sospechoso.
+- `sospechoso_sp`: string. Señas particulares del sospechoso.
+- `resumen_hechos`: string. Resumen de los hechos.
 
 ## Tecnologías usadas
 
-- `Spark`: Spark was used in the local environment, as the data is not big enough to demand a cluster. However, data is big enough that file partitioning optimizations had to be performed, to increase the performance of the ETL.
+- `Amazon Rekognition`: Se utilizó para crear la huella digital de los rostros de los desaparecidos.
 
-- `Python`: Python was used to perform the ETLs and to connect to Spark. This pipeline was implemented in Python so it could be run in a AWS EMR cluster as well.
+- `Amazon S3`: Se usa para almacenar las imágenes de las Alertas Amber en Chiapas y de las imágenes para revisión.
 
-- `R`: An R Markdown was used to analyze the data and produce the maps in leaflet.
+- `Amazon DynamoDB`: Se usa para almacenar la huella digital y id de las imágenes.
+
+- `Amazon Gateway`: Crea la api que conecta la lambda de identificación.
+
+- `Amazon Lambda`: se usa para registrar a las imágenes de los desaparecidos, y para comparar las imágenes que se desea revisar.
+
+- `Python`: se utiliza para scrapear y obtener la información de la página de Alertas Amber.
 
 ## Escenario de Producción
 
@@ -84,27 +99,12 @@ Data dictionary for `restaurants.csv`
 ![pylint](aws_screanshots/pylint.png)
 ![flake8](aws_screanshots/flake8.png)
 
-
---------------------------------------------------------------------------------
-
-
-
-
-
-# ProyectoFinalAP
-Este repositorio tiene por objetivo resguardar todo los archivos y modelo de identificación de imagenes para la materia de Arquitectura de Producto
-
-# les dejo acá los links para que las puedan editar más facil
-working backwards
+## Working backwards
 https://docs.google.com/document/d/1iUAD5lQKMfh_aG3wlN3bzLpjRmP-iITJtGmMrn_kBBs/edit?usp=sharing
 
-presentación
-no alcance a hacerla, mañana la termino
+## Presentación
 https://docs.google.com/presentation/d/1sboQzMv_p1cDkurnLl7EnGX2L56W2bM19JhrGj4lsiE/edit?usp=sharing
 
-
-aca viene más información para el working backwards y la presentación, pero tenemos que sacar gráficas de las bases que tienen ahí
-https://derechosinfancia.org.mx/v1/grupo-de-trabajo/
 
 
 #
