@@ -135,8 +135,8 @@ Diccionario de datos para `chiapas.csv`
 
 ## Pylint y Flake8
 
-![pylint](aws_screanshots/pylint.png)
-![flake8](aws_screanshots/flake8.png)
+![pylint](aws_screenshots/pylint.png)
+![flake8](aws_screenshots/flake8.png)
 
 ## Working backwards
 https://docs.google.com/document/d/1iUAD5lQKMfh_aG3wlN3bzLpjRmP-iITJtGmMrn_kBBs/edit?usp=sharing
