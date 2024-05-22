@@ -4,6 +4,12 @@
 
 - Usar la información de la página de Alerta Amber en México y la tecnología de Amazon Rekognition para identificar fotos de menores de edad publicadas en  redes sociales que carecen de una Alerta Amber.
 
+## Introducción
+
+La desaparición de menores en México constituye una problemática en crecimiento, impactando profundamente a miles de familias en todo el país. Desde la implementación del Registro Nacional de Personas Desaparecidas y No Localizadas en 2012, se han reportado más de 93,000 menores desaparecidos, de los cuales, a mayo de 2023, uno de cada cinco no ha sido aún localizado. En respuesta a esta crisis, el Programa Nacional Alerta AMBER, también iniciado en 2012, ha sido esencial para la localización rápida de menores en situación de riesgo. La difusión de estas alertas a través de redes sociales juega un papel crucial al proporcionar un amplio alcance y movilización comunitaria instantánea, aunque mantener la actualización y precisión de estas publicaciones representa un reto significativo para las autoridades y entidades involucradas.
+
+![Desapariciones de Menores en Chiapas](info2.jpg)
+
 ## Datos
 
 - Los datos utilizados en este proyecto son scrapeados de [Alerta Amber México](https://alertaamber.fgr.org.mx/)
