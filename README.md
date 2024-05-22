@@ -53,10 +53,9 @@ La desaparición de menores en México constituye una problemática en crecimien
 ├── notebooks\
 ├── README.md\
 ├── referencias\
-├── report\
 ├── requirements\
 ├── src\
-└── transform_dataframe.py\
+└── transform_dataframe.py
 
 ## Arquitectura de la solución
  

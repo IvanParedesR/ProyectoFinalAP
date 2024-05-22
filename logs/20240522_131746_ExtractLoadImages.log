@@ -1,0 +1,489 @@
+2024-05-22 13:17:46,734 - src.utils - INFO - Comenzando descarga de imágenes ...
+2024-05-22 13:17:46,738 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): appalertaamber.fgr.org.mx:443
+2024-05-22 13:17:46,828 - urllib3.connectionpool - DEBUG - https://appalertaamber.fgr.org.mx:443 "GET /Alerta/ObtenerFotoDesaparecido?numero_reporte=754 HTTP/1.1" 200 8832
+2024-05-22 13:17:46,834 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): appalertaamber.fgr.org.mx:443
+2024-05-22 13:17:46,947 - urllib3.connectionpool - DEBUG - https://appalertaamber.fgr.org.mx:443 "GET /Alerta/ObtenerFotoDesaparecido?numero_reporte=696 HTTP/1.1" 200 6300
+2024-05-22 13:17:46,956 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): appalertaamber.fgr.org.mx:443
+2024-05-22 13:17:47,077 - urllib3.connectionpool - DEBUG - https://appalertaamber.fgr.org.mx:443 "GET /Alerta/ObtenerFotoDesaparecido?numero_reporte=828 HTTP/1.1" 200 19430
+2024-05-22 13:17:47,086 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): appalertaamber.fgr.org.mx:443
+2024-05-22 13:17:47,206 - urllib3.connectionpool - DEBUG - https://appalertaamber.fgr.org.mx:443 "GET /Alerta/ObtenerFotoDesaparecido?numero_reporte=398 HTTP/1.1" 200 18773
+2024-05-22 13:17:47,211 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): appalertaamber.fgr.org.mx:443
+2024-05-22 13:17:47,339 - urllib3.connectionpool - DEBUG - https://appalertaamber.fgr.org.mx:443 "GET /Alerta/ObtenerFotoDesaparecido?numero_reporte=398 HTTP/1.1" 200 18773
+2024-05-22 13:17:47,343 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): appalertaamber.fgr.org.mx:443
+2024-05-22 13:17:47,449 - urllib3.connectionpool - DEBUG - https://appalertaamber.fgr.org.mx:443 "GET /Alerta/ObtenerFotoDesaparecido?numero_reporte=0801 HTTP/1.1" 200 12814
+2024-05-22 13:17:47,454 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): appalertaamber.fgr.org.mx:443
+2024-05-22 13:17:47,585 - urllib3.connectionpool - DEBUG - https://appalertaamber.fgr.org.mx:443 "GET /Alerta/ObtenerFotoDesaparecido?numero_reporte=0626 HTTP/1.1" 200 20416
+2024-05-22 13:17:47,598 - botocore.hooks - DEBUG - Changing event name from creating-client-class.iot-data to creating-client-class.iot-data-plane
+2024-05-22 13:17:47,605 - botocore.hooks - DEBUG - Changing event name from before-call.apigateway to before-call.api-gateway
+2024-05-22 13:17:47,607 - botocore.hooks - DEBUG - Changing event name from request-created.machinelearning.Predict to request-created.machine-learning.Predict
+2024-05-22 13:17:47,612 - botocore.hooks - DEBUG - Changing event name from before-parameter-build.autoscaling.CreateLaunchConfiguration to before-parameter-build.auto-scaling.CreateLaunchConfiguration
+2024-05-22 13:17:47,612 - botocore.hooks - DEBUG - Changing event name from before-parameter-build.route53 to before-parameter-build.route-53
+2024-05-22 13:17:47,614 - botocore.hooks - DEBUG - Changing event name from request-created.cloudsearchdomain.Search to request-created.cloudsearch-domain.Search
+2024-05-22 13:17:47,615 - botocore.hooks - DEBUG - Changing event name from docs.*.autoscaling.CreateLaunchConfiguration.complete-section to docs.*.auto-scaling.CreateLaunchConfiguration.complete-section
+2024-05-22 13:17:47,620 - botocore.hooks - DEBUG - Changing event name from before-parameter-build.logs.CreateExportTask to before-parameter-build.cloudwatch-logs.CreateExportTask
+2024-05-22 13:17:47,620 - botocore.hooks - DEBUG - Changing event name from docs.*.logs.CreateExportTask.complete-section to docs.*.cloudwatch-logs.CreateExportTask.complete-section
+2024-05-22 13:17:47,620 - botocore.hooks - DEBUG - Changing event name from before-parameter-build.cloudsearchdomain.Search to before-parameter-build.cloudsearch-domain.Search
+2024-05-22 13:17:47,620 - botocore.hooks - DEBUG - Changing event name from docs.*.cloudsearchdomain.Search.complete-section to docs.*.cloudsearch-domain.Search.complete-section
+2024-05-22 13:17:47,621 - botocore.session - DEBUG - Setting config variable for profile to 'arquitectura'
+2024-05-22 13:17:47,621 - botocore.session - DEBUG - Setting config variable for region to 'us-east-1'
+2024-05-22 13:17:47,624 - botocore.utils - DEBUG - IMDS ENDPOINT: http://169.254.169.254/
+2024-05-22 13:17:47,626 - botocore.credentials - DEBUG - Skipping environment variable credential check because profile name was explicitly set.
+2024-05-22 13:17:47,626 - botocore.credentials - DEBUG - Looking for credentials via: assume-role
+2024-05-22 13:17:47,626 - botocore.credentials - DEBUG - Looking for credentials via: assume-role-with-web-identity
+2024-05-22 13:17:47,626 - botocore.credentials - DEBUG - Looking for credentials via: sso
+2024-05-22 13:17:47,626 - botocore.credentials - DEBUG - Looking for credentials via: shared-credentials-file
+2024-05-22 13:17:47,627 - botocore.credentials - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2024-05-22 13:17:47,628 - botocore.loaders - DEBUG - Loading JSON file: /home/saraluz/miniconda3/envs/arquitectura/lib/python3.11/site-packages/botocore/data/endpoints.json
+2024-05-22 13:17:47,643 - botocore.loaders - DEBUG - Loading JSON file: /home/saraluz/miniconda3/envs/arquitectura/lib/python3.11/site-packages/botocore/data/sdk-default-configuration.json
+2024-05-22 13:17:47,643 - botocore.hooks - DEBUG - Event choose-service-name: calling handler <function handle_service_name_alias at 0x77ff71e2b240>
+2024-05-22 13:17:47,652 - botocore.loaders - DEBUG - Loading JSON file: /home/saraluz/miniconda3/envs/arquitectura/lib/python3.11/site-packages/botocore/data/s3/2006-03-01/service-2.json
+2024-05-22 13:17:47,664 - botocore.loaders - DEBUG - Loading JSON file: /home/saraluz/miniconda3/envs/arquitectura/lib/python3.11/site-packages/botocore/data/s3/2006-03-01/endpoint-rule-set-1.json
+2024-05-22 13:17:47,667 - botocore.loaders - DEBUG - Loading JSON file: /home/saraluz/miniconda3/envs/arquitectura/lib/python3.11/site-packages/botocore/data/partitions.json
+2024-05-22 13:17:47,668 - botocore.hooks - DEBUG - Event creating-client-class.s3: calling handler <function add_generate_presigned_post at 0x77ff71f6b6a0>
+2024-05-22 13:17:47,668 - botocore.hooks - DEBUG - Event creating-client-class.s3: calling handler <function lazy_call.<locals>._handler at 0x77ff7186b740>
+2024-05-22 13:17:47,678 - botocore.hooks - DEBUG - Event creating-client-class.s3: calling handler <function add_generate_presigned_url at 0x77ff71f6b420>
+2024-05-22 13:17:47,678 - botocore.configprovider - DEBUG - Looking for endpoint for s3 via: environment_service
+2024-05-22 13:17:47,678 - botocore.configprovider - DEBUG - Looking for endpoint for s3 via: environment_global
+2024-05-22 13:17:47,678 - botocore.configprovider - DEBUG - Looking for endpoint for s3 via: config_service
+2024-05-22 13:17:47,678 - botocore.configprovider - DEBUG - Looking for endpoint for s3 via: config_global
+2024-05-22 13:17:47,678 - botocore.configprovider - DEBUG - No configured endpoint found.
+2024-05-22 13:17:47,680 - botocore.endpoint - DEBUG - Setting s3 timeout as (60, 60)
+2024-05-22 13:17:47,681 - botocore.loaders - DEBUG - Loading JSON file: /home/saraluz/miniconda3/envs/arquitectura/lib/python3.11/site-packages/botocore/data/_retry.json
+2024-05-22 13:17:47,681 - botocore.client - DEBUG - Registering retry handlers for service: s3
+2024-05-22 13:17:47,681 - botocore.utils - DEBUG - Registering S3 region redirector handler
+2024-05-22 13:17:47,682 - botocore.utils - DEBUG - Registering S3Express Identity Resolver
+2024-05-22 13:17:47,682 - src.utils - INFO - ['801', '626', '754', '696', '828', '398']
+2024-05-22 13:17:47,682 - boto3.s3.transfer - DEBUG - Opting out of CRT Transfer Manager. Preferred client: auto, CRT available: False, Instance Optimized: False.
+2024-05-22 13:17:47,682 - boto3.s3.transfer - DEBUG - Using default client. pid: 17656, thread: 131940269066048
+2024-05-22 13:17:47,682 - s3transfer.utils - DEBUG - Acquiring 0
+2024-05-22 13:17:47,683 - s3transfer.tasks - DEBUG - UploadSubmissionTask(transfer_id=0, {'transfer_future': <s3transfer.futures.TransferFuture object at 0x77ff7186f110>}) about to wait for the following futures []
+2024-05-22 13:17:47,683 - s3transfer.tasks - DEBUG - UploadSubmissionTask(transfer_id=0, {'transfer_future': <s3transfer.futures.TransferFuture object at 0x77ff7186f110>}) done waiting for dependent futures
+2024-05-22 13:17:47,683 - s3transfer.tasks - DEBUG - Executing task UploadSubmissionTask(transfer_id=0, {'transfer_future': <s3transfer.futures.TransferFuture object at 0x77ff7186f110>}) with kwargs {'client': <botocore.client.S3 object at 0x77ff710a2210>, 'config': <boto3.s3.transfer.TransferConfig object at 0x77ff710b00d0>, 'osutil': <s3transfer.utils.OSUtils object at 0x77ff710b09d0>, 'request_executor': <s3transfer.futures.BoundedExecutor object at 0x77ff71027610>, 'transfer_future': <s3transfer.futures.TransferFuture object at 0x77ff7186f110>}
+2024-05-22 13:17:47,683 - s3transfer.futures - DEBUG - Submitting task PutObjectTask(transfer_id=0, {'bucket': 'itam-proyecto-saraluz', 'key': 'image_801.jpg', 'extra_args': {}}) to executor <s3transfer.futures.BoundedExecutor object at 0x77ff71027610> for transfer request: 0.
+2024-05-22 13:17:47,683 - s3transfer.utils - DEBUG - Acquiring 0
+2024-05-22 13:17:47,683 - s3transfer.tasks - DEBUG - PutObjectTask(transfer_id=0, {'bucket': 'itam-proyecto-saraluz', 'key': 'image_801.jpg', 'extra_args': {}}) about to wait for the following futures []
+2024-05-22 13:17:47,683 - s3transfer.utils - DEBUG - Releasing acquire 0/None
+2024-05-22 13:17:47,683 - s3transfer.tasks - DEBUG - PutObjectTask(transfer_id=0, {'bucket': 'itam-proyecto-saraluz', 'key': 'image_801.jpg', 'extra_args': {}}) done waiting for dependent futures
+2024-05-22 13:17:47,683 - s3transfer.tasks - DEBUG - Executing task PutObjectTask(transfer_id=0, {'bucket': 'itam-proyecto-saraluz', 'key': 'image_801.jpg', 'extra_args': {}}) with kwargs {'client': <botocore.client.S3 object at 0x77ff710a2210>, 'fileobj': <s3transfer.utils.ReadFileChunk object at 0x77ff73187ed0>, 'bucket': 'itam-proyecto-saraluz', 'key': 'image_801.jpg', 'extra_args': {}}
+2024-05-22 13:17:47,684 - botocore.hooks - DEBUG - Event before-parameter-build.s3.PutObject: calling handler <function validate_ascii_metadata at 0x77ff71e45a80>
+2024-05-22 13:17:47,684 - botocore.hooks - DEBUG - Event before-parameter-build.s3.PutObject: calling handler <function sse_md5 at 0x77ff71e44d60>
+2024-05-22 13:17:47,684 - botocore.hooks - DEBUG - Event before-parameter-build.s3.PutObject: calling handler <function convert_body_to_file_like_object at 0x77ff71e46480>
+2024-05-22 13:17:47,684 - botocore.hooks - DEBUG - Event before-parameter-build.s3.PutObject: calling handler <function validate_bucket_name at 0x77ff71e44cc0>
+2024-05-22 13:17:47,684 - botocore.hooks - DEBUG - Event before-parameter-build.s3.PutObject: calling handler <function remove_bucket_from_url_paths_from_model at 0x77ff71e46de0>
+2024-05-22 13:17:47,684 - botocore.hooks - DEBUG - Event before-parameter-build.s3.PutObject: calling handler <bound method S3RegionRedirectorv2.annotate_request_context of <botocore.utils.S3RegionRedirectorv2 object at 0x77ff710b2b50>>
+2024-05-22 13:17:47,684 - botocore.hooks - DEBUG - Event before-parameter-build.s3.PutObject: calling handler <bound method ClientCreator._inject_s3_input_parameters of <botocore.client.ClientCreator object at 0x77ff711ab2d0>>
+2024-05-22 13:17:47,684 - botocore.hooks - DEBUG - Event before-parameter-build.s3.PutObject: calling handler <function generate_idempotent_uuid at 0x77ff71e44ae0>
+2024-05-22 13:17:47,684 - botocore.hooks - DEBUG - Event before-endpoint-resolution.s3: calling handler <function customize_endpoint_resolver_builtins at 0x77ff71e46fc0>
+2024-05-22 13:17:47,684 - botocore.hooks - DEBUG - Event before-endpoint-resolution.s3: calling handler <bound method S3RegionRedirectorv2.redirect_from_cache of <botocore.utils.S3RegionRedirectorv2 object at 0x77ff710b2b50>>
+2024-05-22 13:17:47,684 - botocore.regions - DEBUG - Calling endpoint provider with parameters: {'Bucket': 'itam-proyecto-saraluz', 'Region': 'us-east-1', 'UseFIPS': False, 'UseDualStack': False, 'ForcePathStyle': False, 'Accelerate': False, 'UseGlobalEndpoint': True, 'Key': 'image_801.jpg', 'DisableMultiRegionAccessPoints': False, 'UseArnRegion': True}
+2024-05-22 13:17:47,685 - botocore.regions - DEBUG - Endpoint provider result: https://itam-proyecto-saraluz.s3.amazonaws.com
+2024-05-22 13:17:47,685 - botocore.regions - DEBUG - Selecting from endpoint provider's list of auth schemes: "sigv4". User selected auth scheme is: "None"
+2024-05-22 13:17:47,685 - botocore.regions - DEBUG - Selected auth type "v4" as "v4" with signing context params: {'region': 'us-east-1', 'signing_name': 's3', 'disableDoubleEncoding': True}
+2024-05-22 13:17:47,685 - botocore.hooks - DEBUG - Event before-call.s3.PutObject: calling handler <function conditionally_calculate_checksum at 0x77ff72093600>
+2024-05-22 13:17:47,685 - botocore.hooks - DEBUG - Event before-call.s3.PutObject: calling handler <function add_expect_header at 0x77ff71e45080>
+2024-05-22 13:17:47,685 - botocore.handlers - DEBUG - Adding expect 100 continue header to request.
+2024-05-22 13:17:47,685 - botocore.hooks - DEBUG - Event before-call.s3.PutObject: calling handler <bound method S3ExpressIdentityResolver.apply_signing_cache_key of <botocore.utils.S3ExpressIdentityResolver object at 0x77ff71027550>>
+2024-05-22 13:17:47,685 - botocore.hooks - DEBUG - Event before-call.s3.PutObject: calling handler <function add_recursion_detection_header at 0x77ff71e2b380>
+2024-05-22 13:17:47,685 - botocore.hooks - DEBUG - Event before-call.s3.PutObject: calling handler <function inject_api_version_header_if_needed at 0x77ff71e465c0>
+2024-05-22 13:17:47,685 - botocore.endpoint - DEBUG - Making request for OperationModel(name=PutObject) with params: {'url_path': '/image_801.jpg', 'query_string': {}, 'method': 'PUT', 'headers': {'User-Agent': 'Boto3/1.34.94 md/Botocore#1.34.94 ua/2.0 os/linux#6.5.0-28-generic md/arch#x86_64 lang/python#3.11.9 md/pyimpl#CPython cfg/retry-mode#legacy Botocore/1.34.94', 'Content-MD5': 'JFYsXkTL9MHfXgOLkPsnJw==', 'Expect': '100-continue'}, 'body': <s3transfer.utils.ReadFileChunk object at 0x77ff73187ed0>, 'auth_path': '/itam-proyecto-saraluz/image_801.jpg', 'url': 'https://itam-proyecto-saraluz.s3.amazonaws.com/image_801.jpg', 'context': {'client_region': 'us-east-1', 'client_config': <botocore.config.Config object at 0x77ff71014190>, 'has_streaming_input': True, 'auth_type': 'v4', 's3_redirect': {'redirected': False, 'bucket': 'itam-proyecto-saraluz', 'params': {'Bucket': 'itam-proyecto-saraluz', 'Key': 'image_801.jpg', 'Body': <s3transfer.utils.ReadFileChunk object at 0x77ff73187ed0>}}, 'input_params': {'Bucket': 'itam-proyecto-saraluz', 'Key': 'image_801.jpg'}, 'signing': {'region': 'us-east-1', 'signing_name': 's3', 'disableDoubleEncoding': True}, 'endpoint_properties': {'authSchemes': [{'disableDoubleEncoding': True, 'name': 'sigv4', 'signingName': 's3', 'signingRegion': 'us-east-1'}]}}}
+2024-05-22 13:17:47,685 - botocore.hooks - DEBUG - Event request-created.s3.PutObject: calling handler <function signal_not_transferring at 0x77ff70f8fec0>
+2024-05-22 13:17:47,685 - botocore.hooks - DEBUG - Event request-created.s3.PutObject: calling handler <bound method RequestSigner.handler of <botocore.signers.RequestSigner object at 0x77ff71014150>>
+2024-05-22 13:17:47,685 - botocore.hooks - DEBUG - Event choose-signer.s3.PutObject: calling handler <bound method ClientCreator._default_s3_presign_to_sigv2 of <botocore.client.ClientCreator object at 0x77ff711ab2d0>>
+2024-05-22 13:17:47,686 - botocore.hooks - DEBUG - Event choose-signer.s3.PutObject: calling handler <function set_operation_specific_signer at 0x77ff71e449a0>
+2024-05-22 13:17:47,686 - botocore.hooks - DEBUG - Event before-sign.s3.PutObject: calling handler <function remove_arn_from_signing_path at 0x77ff71e46f20>
+2024-05-22 13:17:47,686 - botocore.hooks - DEBUG - Event before-sign.s3.PutObject: calling handler <bound method S3ExpressIdentityResolver.resolve_s3express_identity of <botocore.utils.S3ExpressIdentityResolver object at 0x77ff71027550>>
+2024-05-22 13:17:47,686 - botocore.auth - DEBUG - Calculating signature using v4 auth.
+2024-05-22 13:17:47,686 - botocore.auth - DEBUG - CanonicalRequest:
+PUT
+/image_801.jpg
+
+content-md5:JFYsXkTL9MHfXgOLkPsnJw==
+host:itam-proyecto-saraluz.s3.amazonaws.com
+x-amz-content-sha256:UNSIGNED-PAYLOAD
+x-amz-date:20240522T191747Z
+
+content-md5;host;x-amz-content-sha256;x-amz-date
+UNSIGNED-PAYLOAD
+2024-05-22 13:17:47,686 - botocore.auth - DEBUG - StringToSign:
+AWS4-HMAC-SHA256
+20240522T191747Z
+20240522/us-east-1/s3/aws4_request
+16e0128d14e9688ca29212da663c8147efc3a2c2b9d008451cea0047608bacc6
+2024-05-22 13:17:47,686 - botocore.auth - DEBUG - Signature:
+c3ec7d517222a86eb641589d726de484d59c4c0c8ab29cfe4f1b8c76cf4926cb
+2024-05-22 13:17:47,686 - botocore.hooks - DEBUG - Event request-created.s3.PutObject: calling handler <function signal_transferring at 0x77ff70f8ff60>
+2024-05-22 13:17:47,686 - botocore.hooks - DEBUG - Event request-created.s3.PutObject: calling handler <function add_retry_headers at 0x77ff71e46d40>
+2024-05-22 13:17:47,686 - botocore.endpoint - DEBUG - Sending http request: <AWSPreparedRequest stream_output=False, method=PUT, url=https://itam-proyecto-saraluz.s3.amazonaws.com/image_801.jpg, headers={'User-Agent': b'Boto3/1.34.94 md/Botocore#1.34.94 ua/2.0 os/linux#6.5.0-28-generic md/arch#x86_64 lang/python#3.11.9 md/pyimpl#CPython cfg/retry-mode#legacy Botocore/1.34.94', 'Content-MD5': b'JFYsXkTL9MHfXgOLkPsnJw==', 'Expect': b'100-continue', 'X-Amz-Date': b'20240522T191747Z', 'X-Amz-Content-SHA256': b'UNSIGNED-PAYLOAD', 'Authorization': b'AWS4-HMAC-SHA256 Credential=AKIATCKANBUOWY4H4D4O/20240522/us-east-1/s3/aws4_request, SignedHeaders=content-md5;host;x-amz-content-sha256;x-amz-date, Signature=c3ec7d517222a86eb641589d726de484d59c4c0c8ab29cfe4f1b8c76cf4926cb', 'amz-sdk-invocation-id': b'5e48d5da-d8b5-4cba-a4ce-36e6e2e5fbfa', 'amz-sdk-request': b'attempt=1', 'Content-Length': '12960'}>
+2024-05-22 13:17:47,686 - botocore.httpsession - DEBUG - Certificate path: /home/saraluz/miniconda3/envs/arquitectura/lib/python3.11/site-packages/certifi/cacert.pem
+2024-05-22 13:17:47,686 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): itam-proyecto-saraluz.s3.amazonaws.com:443
+2024-05-22 13:17:47,883 - botocore.awsrequest - DEBUG - Waiting for 100 Continue response.
+2024-05-22 13:17:47,967 - botocore.awsrequest - DEBUG - 100 Continue response seen, now sending request body.
+2024-05-22 13:17:48,082 - urllib3.connectionpool - DEBUG - https://itam-proyecto-saraluz.s3.amazonaws.com:443 "PUT /image_801.jpg HTTP/1.1" 200 0
+2024-05-22 13:17:48,082 - botocore.parsers - DEBUG - Response headers: {'x-amz-id-2': 'FEWunheTLr2Vq+PLWcmh4FDn8IW+0fAxp6ws+6lWv94YZs94miz1z6Pcg49zfg8FPd4SpozfzDBuGl6D4jdRnELguQNLN3USemBxDk2Mhik=', 'x-amz-request-id': 'CTDM0WGB4SVYHNAG', 'Date': 'Wed, 22 May 2024 19:17:48 GMT', 'x-amz-server-side-encryption': 'AES256', 'ETag': '"24562c5e44cbf4c1df5e038b90fb2727"', 'Server': 'AmazonS3', 'Content-Length': '0'}
+2024-05-22 13:17:48,082 - botocore.parsers - DEBUG - Response body:
+b''
+2024-05-22 13:17:48,083 - botocore.hooks - DEBUG - Event needs-retry.s3.PutObject: calling handler <botocore.retryhandler.RetryHandler object at 0x77ff723debd0>
+2024-05-22 13:17:48,083 - botocore.retryhandler - DEBUG - No retry needed.
+2024-05-22 13:17:48,083 - botocore.hooks - DEBUG - Event needs-retry.s3.PutObject: calling handler <bound method S3RegionRedirectorv2.redirect_from_error of <botocore.utils.S3RegionRedirectorv2 object at 0x77ff710b2b50>>
+2024-05-22 13:17:48,083 - s3transfer.utils - DEBUG - Releasing acquire 0/None
+2024-05-22 13:17:48,083 - boto3.s3.transfer - DEBUG - Opting out of CRT Transfer Manager. Preferred client: auto, CRT available: False, Instance Optimized: False.
+2024-05-22 13:17:48,083 - boto3.s3.transfer - DEBUG - Using default client. pid: 17656, thread: 131940269066048
+2024-05-22 13:17:48,083 - s3transfer.utils - DEBUG - Acquiring 0
+2024-05-22 13:17:48,083 - s3transfer.tasks - DEBUG - UploadSubmissionTask(transfer_id=0, {'transfer_future': <s3transfer.futures.TransferFuture object at 0x77ff71038ad0>}) about to wait for the following futures []
+2024-05-22 13:17:48,084 - s3transfer.tasks - DEBUG - UploadSubmissionTask(transfer_id=0, {'transfer_future': <s3transfer.futures.TransferFuture object at 0x77ff71038ad0>}) done waiting for dependent futures
+2024-05-22 13:17:48,084 - s3transfer.tasks - DEBUG - Executing task UploadSubmissionTask(transfer_id=0, {'transfer_future': <s3transfer.futures.TransferFuture object at 0x77ff71038ad0>}) with kwargs {'client': <botocore.client.S3 object at 0x77ff710a2210>, 'config': <boto3.s3.transfer.TransferConfig object at 0x77ff72c38a90>, 'osutil': <s3transfer.utils.OSUtils object at 0x77ff71027f10>, 'request_executor': <s3transfer.futures.BoundedExecutor object at 0x77ff71027c90>, 'transfer_future': <s3transfer.futures.TransferFuture object at 0x77ff71038ad0>}
+2024-05-22 13:17:48,084 - s3transfer.futures - DEBUG - Submitting task PutObjectTask(transfer_id=0, {'bucket': 'itam-proyecto-saraluz', 'key': 'image_626.jpg', 'extra_args': {}}) to executor <s3transfer.futures.BoundedExecutor object at 0x77ff71027c90> for transfer request: 0.
+2024-05-22 13:17:48,084 - s3transfer.utils - DEBUG - Acquiring 0
+2024-05-22 13:17:48,084 - s3transfer.tasks - DEBUG - PutObjectTask(transfer_id=0, {'bucket': 'itam-proyecto-saraluz', 'key': 'image_626.jpg', 'extra_args': {}}) about to wait for the following futures []
+2024-05-22 13:17:48,084 - s3transfer.utils - DEBUG - Releasing acquire 0/None
+2024-05-22 13:17:48,084 - s3transfer.tasks - DEBUG - PutObjectTask(transfer_id=0, {'bucket': 'itam-proyecto-saraluz', 'key': 'image_626.jpg', 'extra_args': {}}) done waiting for dependent futures
+2024-05-22 13:17:48,084 - s3transfer.tasks - DEBUG - Executing task PutObjectTask(transfer_id=0, {'bucket': 'itam-proyecto-saraluz', 'key': 'image_626.jpg', 'extra_args': {}}) with kwargs {'client': <botocore.client.S3 object at 0x77ff710a2210>, 'fileobj': <s3transfer.utils.ReadFileChunk object at 0x77ff710a2a50>, 'bucket': 'itam-proyecto-saraluz', 'key': 'image_626.jpg', 'extra_args': {}}
+2024-05-22 13:17:48,084 - botocore.hooks - DEBUG - Event before-parameter-build.s3.PutObject: calling handler <function validate_ascii_metadata at 0x77ff71e45a80>
+2024-05-22 13:17:48,084 - botocore.hooks - DEBUG - Event before-parameter-build.s3.PutObject: calling handler <function sse_md5 at 0x77ff71e44d60>
+2024-05-22 13:17:48,084 - botocore.hooks - DEBUG - Event before-parameter-build.s3.PutObject: calling handler <function convert_body_to_file_like_object at 0x77ff71e46480>
+2024-05-22 13:17:48,084 - botocore.hooks - DEBUG - Event before-parameter-build.s3.PutObject: calling handler <function validate_bucket_name at 0x77ff71e44cc0>
+2024-05-22 13:17:48,084 - botocore.hooks - DEBUG - Event before-parameter-build.s3.PutObject: calling handler <function remove_bucket_from_url_paths_from_model at 0x77ff71e46de0>
+2024-05-22 13:17:48,084 - botocore.hooks - DEBUG - Event before-parameter-build.s3.PutObject: calling handler <bound method S3RegionRedirectorv2.annotate_request_context of <botocore.utils.S3RegionRedirectorv2 object at 0x77ff710b2b50>>
+2024-05-22 13:17:48,085 - botocore.hooks - DEBUG - Event before-parameter-build.s3.PutObject: calling handler <bound method ClientCreator._inject_s3_input_parameters of <botocore.client.ClientCreator object at 0x77ff711ab2d0>>
+2024-05-22 13:17:48,085 - botocore.hooks - DEBUG - Event before-parameter-build.s3.PutObject: calling handler <function generate_idempotent_uuid at 0x77ff71e44ae0>
+2024-05-22 13:17:48,085 - botocore.hooks - DEBUG - Event before-endpoint-resolution.s3: calling handler <function customize_endpoint_resolver_builtins at 0x77ff71e46fc0>
+2024-05-22 13:17:48,085 - botocore.hooks - DEBUG - Event before-endpoint-resolution.s3: calling handler <bound method S3RegionRedirectorv2.redirect_from_cache of <botocore.utils.S3RegionRedirectorv2 object at 0x77ff710b2b50>>
+2024-05-22 13:17:48,085 - botocore.regions - DEBUG - Calling endpoint provider with parameters: {'Bucket': 'itam-proyecto-saraluz', 'Region': 'us-east-1', 'UseFIPS': False, 'UseDualStack': False, 'ForcePathStyle': False, 'Accelerate': False, 'UseGlobalEndpoint': True, 'Key': 'image_626.jpg', 'DisableMultiRegionAccessPoints': False, 'UseArnRegion': True}
+2024-05-22 13:17:48,085 - botocore.regions - DEBUG - Endpoint provider result: https://itam-proyecto-saraluz.s3.amazonaws.com
+2024-05-22 13:17:48,085 - botocore.regions - DEBUG - Selecting from endpoint provider's list of auth schemes: "sigv4". User selected auth scheme is: "None"
+2024-05-22 13:17:48,085 - botocore.regions - DEBUG - Selected auth type "v4" as "v4" with signing context params: {'region': 'us-east-1', 'signing_name': 's3', 'disableDoubleEncoding': True}
+2024-05-22 13:17:48,085 - botocore.hooks - DEBUG - Event before-call.s3.PutObject: calling handler <function conditionally_calculate_checksum at 0x77ff72093600>
+2024-05-22 13:17:48,085 - botocore.hooks - DEBUG - Event before-call.s3.PutObject: calling handler <function add_expect_header at 0x77ff71e45080>
+2024-05-22 13:17:48,086 - botocore.handlers - DEBUG - Adding expect 100 continue header to request.
+2024-05-22 13:17:48,086 - botocore.hooks - DEBUG - Event before-call.s3.PutObject: calling handler <bound method S3ExpressIdentityResolver.apply_signing_cache_key of <botocore.utils.S3ExpressIdentityResolver object at 0x77ff71027550>>
+2024-05-22 13:17:48,086 - botocore.hooks - DEBUG - Event before-call.s3.PutObject: calling handler <function add_recursion_detection_header at 0x77ff71e2b380>
+2024-05-22 13:17:48,086 - botocore.hooks - DEBUG - Event before-call.s3.PutObject: calling handler <function inject_api_version_header_if_needed at 0x77ff71e465c0>
+2024-05-22 13:17:48,086 - botocore.endpoint - DEBUG - Making request for OperationModel(name=PutObject) with params: {'url_path': '/image_626.jpg', 'query_string': {}, 'method': 'PUT', 'headers': {'User-Agent': 'Boto3/1.34.94 md/Botocore#1.34.94 ua/2.0 os/linux#6.5.0-28-generic md/arch#x86_64 lang/python#3.11.9 md/pyimpl#CPython cfg/retry-mode#legacy Botocore/1.34.94', 'Content-MD5': 'zTL8JArfvmQOw4VErD0YLQ==', 'Expect': '100-continue'}, 'body': <s3transfer.utils.ReadFileChunk object at 0x77ff710a2a50>, 'auth_path': '/itam-proyecto-saraluz/image_626.jpg', 'url': 'https://itam-proyecto-saraluz.s3.amazonaws.com/image_626.jpg', 'context': {'client_region': 'us-east-1', 'client_config': <botocore.config.Config object at 0x77ff71014190>, 'has_streaming_input': True, 'auth_type': 'v4', 's3_redirect': {'redirected': False, 'bucket': 'itam-proyecto-saraluz', 'params': {'Bucket': 'itam-proyecto-saraluz', 'Key': 'image_626.jpg', 'Body': <s3transfer.utils.ReadFileChunk object at 0x77ff710a2a50>}}, 'input_params': {'Bucket': 'itam-proyecto-saraluz', 'Key': 'image_626.jpg'}, 'signing': {'region': 'us-east-1', 'signing_name': 's3', 'disableDoubleEncoding': True}, 'endpoint_properties': {'authSchemes': [{'disableDoubleEncoding': True, 'name': 'sigv4', 'signingName': 's3', 'signingRegion': 'us-east-1'}]}}}
+2024-05-22 13:17:48,086 - botocore.hooks - DEBUG - Event request-created.s3.PutObject: calling handler <function signal_not_transferring at 0x77ff70f8fec0>
+2024-05-22 13:17:48,086 - botocore.hooks - DEBUG - Event request-created.s3.PutObject: calling handler <bound method RequestSigner.handler of <botocore.signers.RequestSigner object at 0x77ff71014150>>
+2024-05-22 13:17:48,086 - botocore.hooks - DEBUG - Event choose-signer.s3.PutObject: calling handler <bound method ClientCreator._default_s3_presign_to_sigv2 of <botocore.client.ClientCreator object at 0x77ff711ab2d0>>
+2024-05-22 13:17:48,086 - botocore.hooks - DEBUG - Event choose-signer.s3.PutObject: calling handler <function set_operation_specific_signer at 0x77ff71e449a0>
+2024-05-22 13:17:48,086 - botocore.hooks - DEBUG - Event before-sign.s3.PutObject: calling handler <function remove_arn_from_signing_path at 0x77ff71e46f20>
+2024-05-22 13:17:48,086 - botocore.hooks - DEBUG - Event before-sign.s3.PutObject: calling handler <bound method S3ExpressIdentityResolver.resolve_s3express_identity of <botocore.utils.S3ExpressIdentityResolver object at 0x77ff71027550>>
+2024-05-22 13:17:48,086 - botocore.auth - DEBUG - Calculating signature using v4 auth.
+2024-05-22 13:17:48,086 - botocore.auth - DEBUG - CanonicalRequest:
+PUT
+/image_626.jpg
+
+content-md5:zTL8JArfvmQOw4VErD0YLQ==
+host:itam-proyecto-saraluz.s3.amazonaws.com
+x-amz-content-sha256:UNSIGNED-PAYLOAD
+x-amz-date:20240522T191748Z
+
+content-md5;host;x-amz-content-sha256;x-amz-date
+UNSIGNED-PAYLOAD
+2024-05-22 13:17:48,086 - botocore.auth - DEBUG - StringToSign:
+AWS4-HMAC-SHA256
+20240522T191748Z
+20240522/us-east-1/s3/aws4_request
+058ee0e5dcb986dee2e6ca4ea7947c88e8692a4821632a49f173d4ca2473363b
+2024-05-22 13:17:48,086 - botocore.auth - DEBUG - Signature:
+e9311f67ffaccb595e643cfb37e2271d73790a7d8e927c99713793e79a62c08a
+2024-05-22 13:17:48,086 - botocore.hooks - DEBUG - Event request-created.s3.PutObject: calling handler <function signal_transferring at 0x77ff70f8ff60>
+2024-05-22 13:17:48,086 - botocore.hooks - DEBUG - Event request-created.s3.PutObject: calling handler <function add_retry_headers at 0x77ff71e46d40>
+2024-05-22 13:17:48,086 - botocore.endpoint - DEBUG - Sending http request: <AWSPreparedRequest stream_output=False, method=PUT, url=https://itam-proyecto-saraluz.s3.amazonaws.com/image_626.jpg, headers={'User-Agent': b'Boto3/1.34.94 md/Botocore#1.34.94 ua/2.0 os/linux#6.5.0-28-generic md/arch#x86_64 lang/python#3.11.9 md/pyimpl#CPython cfg/retry-mode#legacy Botocore/1.34.94', 'Content-MD5': b'zTL8JArfvmQOw4VErD0YLQ==', 'Expect': b'100-continue', 'X-Amz-Date': b'20240522T191748Z', 'X-Amz-Content-SHA256': b'UNSIGNED-PAYLOAD', 'Authorization': b'AWS4-HMAC-SHA256 Credential=AKIATCKANBUOWY4H4D4O/20240522/us-east-1/s3/aws4_request, SignedHeaders=content-md5;host;x-amz-content-sha256;x-amz-date, Signature=e9311f67ffaccb595e643cfb37e2271d73790a7d8e927c99713793e79a62c08a', 'amz-sdk-invocation-id': b'e2b9079b-8168-49d6-a436-869aa2754328', 'amz-sdk-request': b'attempt=1', 'Content-Length': '20555'}>
+2024-05-22 13:17:48,087 - botocore.httpsession - DEBUG - Certificate path: /home/saraluz/miniconda3/envs/arquitectura/lib/python3.11/site-packages/certifi/cacert.pem
+2024-05-22 13:17:48,087 - botocore.awsrequest - DEBUG - Waiting for 100 Continue response.
+2024-05-22 13:17:48,159 - botocore.awsrequest - DEBUG - 100 Continue response seen, now sending request body.
+2024-05-22 13:17:48,302 - urllib3.connectionpool - DEBUG - https://itam-proyecto-saraluz.s3.amazonaws.com:443 "PUT /image_626.jpg HTTP/1.1" 200 0
+2024-05-22 13:17:48,302 - botocore.parsers - DEBUG - Response headers: {'x-amz-id-2': 'Mo5OX8UUmc7XHmBWdJg1hkiFpI55hpbLoOcbfutzEEl9/+kouR+QH3VzpPG+lW6GF8uJScNzFDkpl0757vADlThoCLermawHzb5cZ8tU8sQ=', 'x-amz-request-id': '554Q7SAK27MCDAVA', 'Date': 'Wed, 22 May 2024 19:17:49 GMT', 'x-amz-server-side-encryption': 'AES256', 'ETag': '"cd32fc240adfbe640ec38544ac3d182d"', 'Server': 'AmazonS3', 'Content-Length': '0'}
+2024-05-22 13:17:48,303 - botocore.parsers - DEBUG - Response body:
+b''
+2024-05-22 13:17:48,303 - botocore.hooks - DEBUG - Event needs-retry.s3.PutObject: calling handler <botocore.retryhandler.RetryHandler object at 0x77ff723debd0>
+2024-05-22 13:17:48,304 - botocore.retryhandler - DEBUG - No retry needed.
+2024-05-22 13:17:48,304 - botocore.hooks - DEBUG - Event needs-retry.s3.PutObject: calling handler <bound method S3RegionRedirectorv2.redirect_from_error of <botocore.utils.S3RegionRedirectorv2 object at 0x77ff710b2b50>>
+2024-05-22 13:17:48,304 - s3transfer.utils - DEBUG - Releasing acquire 0/None
+2024-05-22 13:17:48,306 - boto3.s3.transfer - DEBUG - Opting out of CRT Transfer Manager. Preferred client: auto, CRT available: False, Instance Optimized: False.
+2024-05-22 13:17:48,306 - boto3.s3.transfer - DEBUG - Using default client. pid: 17656, thread: 131940269066048
+2024-05-22 13:17:48,307 - s3transfer.utils - DEBUG - Acquiring 0
+2024-05-22 13:17:48,308 - s3transfer.tasks - DEBUG - UploadSubmissionTask(transfer_id=0, {'transfer_future': <s3transfer.futures.TransferFuture object at 0x77ff71891ad0>}) about to wait for the following futures []
+2024-05-22 13:17:48,308 - s3transfer.tasks - DEBUG - UploadSubmissionTask(transfer_id=0, {'transfer_future': <s3transfer.futures.TransferFuture object at 0x77ff71891ad0>}) done waiting for dependent futures
+2024-05-22 13:17:48,308 - s3transfer.tasks - DEBUG - Executing task UploadSubmissionTask(transfer_id=0, {'transfer_future': <s3transfer.futures.TransferFuture object at 0x77ff71891ad0>}) with kwargs {'client': <botocore.client.S3 object at 0x77ff710a2210>, 'config': <boto3.s3.transfer.TransferConfig object at 0x77ff71014c90>, 'osutil': <s3transfer.utils.OSUtils object at 0x77ff73187ed0>, 'request_executor': <s3transfer.futures.BoundedExecutor object at 0x77ff71027710>, 'transfer_future': <s3transfer.futures.TransferFuture object at 0x77ff71891ad0>}
+2024-05-22 13:17:48,309 - s3transfer.futures - DEBUG - Submitting task PutObjectTask(transfer_id=0, {'bucket': 'itam-proyecto-saraluz', 'key': 'image_754.jpg', 'extra_args': {}}) to executor <s3transfer.futures.BoundedExecutor object at 0x77ff71027710> for transfer request: 0.
+2024-05-22 13:17:48,309 - s3transfer.utils - DEBUG - Acquiring 0
+2024-05-22 13:17:48,310 - s3transfer.tasks - DEBUG - PutObjectTask(transfer_id=0, {'bucket': 'itam-proyecto-saraluz', 'key': 'image_754.jpg', 'extra_args': {}}) about to wait for the following futures []
+2024-05-22 13:17:48,310 - s3transfer.tasks - DEBUG - PutObjectTask(transfer_id=0, {'bucket': 'itam-proyecto-saraluz', 'key': 'image_754.jpg', 'extra_args': {}}) done waiting for dependent futures
+2024-05-22 13:17:48,311 - s3transfer.tasks - DEBUG - Executing task PutObjectTask(transfer_id=0, {'bucket': 'itam-proyecto-saraluz', 'key': 'image_754.jpg', 'extra_args': {}}) with kwargs {'client': <botocore.client.S3 object at 0x77ff710a2210>, 'fileobj': <s3transfer.utils.ReadFileChunk object at 0x77ff7104a450>, 'bucket': 'itam-proyecto-saraluz', 'key': 'image_754.jpg', 'extra_args': {}}
+2024-05-22 13:17:48,311 - s3transfer.utils - DEBUG - Releasing acquire 0/None
+2024-05-22 13:17:48,312 - botocore.hooks - DEBUG - Event before-parameter-build.s3.PutObject: calling handler <function validate_ascii_metadata at 0x77ff71e45a80>
+2024-05-22 13:17:48,312 - botocore.hooks - DEBUG - Event before-parameter-build.s3.PutObject: calling handler <function sse_md5 at 0x77ff71e44d60>
+2024-05-22 13:17:48,313 - botocore.hooks - DEBUG - Event before-parameter-build.s3.PutObject: calling handler <function convert_body_to_file_like_object at 0x77ff71e46480>
+2024-05-22 13:17:48,313 - botocore.hooks - DEBUG - Event before-parameter-build.s3.PutObject: calling handler <function validate_bucket_name at 0x77ff71e44cc0>
+2024-05-22 13:17:48,313 - botocore.hooks - DEBUG - Event before-parameter-build.s3.PutObject: calling handler <function remove_bucket_from_url_paths_from_model at 0x77ff71e46de0>
+2024-05-22 13:17:48,313 - botocore.hooks - DEBUG - Event before-parameter-build.s3.PutObject: calling handler <bound method S3RegionRedirectorv2.annotate_request_context of <botocore.utils.S3RegionRedirectorv2 object at 0x77ff710b2b50>>
+2024-05-22 13:17:48,313 - botocore.hooks - DEBUG - Event before-parameter-build.s3.PutObject: calling handler <bound method ClientCreator._inject_s3_input_parameters of <botocore.client.ClientCreator object at 0x77ff711ab2d0>>
+2024-05-22 13:17:48,314 - botocore.hooks - DEBUG - Event before-parameter-build.s3.PutObject: calling handler <function generate_idempotent_uuid at 0x77ff71e44ae0>
+2024-05-22 13:17:48,314 - botocore.hooks - DEBUG - Event before-endpoint-resolution.s3: calling handler <function customize_endpoint_resolver_builtins at 0x77ff71e46fc0>
+2024-05-22 13:17:48,314 - botocore.hooks - DEBUG - Event before-endpoint-resolution.s3: calling handler <bound method S3RegionRedirectorv2.redirect_from_cache of <botocore.utils.S3RegionRedirectorv2 object at 0x77ff710b2b50>>
+2024-05-22 13:17:48,314 - botocore.regions - DEBUG - Calling endpoint provider with parameters: {'Bucket': 'itam-proyecto-saraluz', 'Region': 'us-east-1', 'UseFIPS': False, 'UseDualStack': False, 'ForcePathStyle': False, 'Accelerate': False, 'UseGlobalEndpoint': True, 'Key': 'image_754.jpg', 'DisableMultiRegionAccessPoints': False, 'UseArnRegion': True}
+2024-05-22 13:17:48,316 - botocore.regions - DEBUG - Endpoint provider result: https://itam-proyecto-saraluz.s3.amazonaws.com
+2024-05-22 13:17:48,316 - botocore.regions - DEBUG - Selecting from endpoint provider's list of auth schemes: "sigv4". User selected auth scheme is: "None"
+2024-05-22 13:17:48,316 - botocore.regions - DEBUG - Selected auth type "v4" as "v4" with signing context params: {'region': 'us-east-1', 'signing_name': 's3', 'disableDoubleEncoding': True}
+2024-05-22 13:17:48,317 - botocore.hooks - DEBUG - Event before-call.s3.PutObject: calling handler <function conditionally_calculate_checksum at 0x77ff72093600>
+2024-05-22 13:17:48,317 - botocore.hooks - DEBUG - Event before-call.s3.PutObject: calling handler <function add_expect_header at 0x77ff71e45080>
+2024-05-22 13:17:48,318 - botocore.handlers - DEBUG - Adding expect 100 continue header to request.
+2024-05-22 13:17:48,318 - botocore.hooks - DEBUG - Event before-call.s3.PutObject: calling handler <bound method S3ExpressIdentityResolver.apply_signing_cache_key of <botocore.utils.S3ExpressIdentityResolver object at 0x77ff71027550>>
+2024-05-22 13:17:48,318 - botocore.hooks - DEBUG - Event before-call.s3.PutObject: calling handler <function add_recursion_detection_header at 0x77ff71e2b380>
+2024-05-22 13:17:48,318 - botocore.hooks - DEBUG - Event before-call.s3.PutObject: calling handler <function inject_api_version_header_if_needed at 0x77ff71e465c0>
+2024-05-22 13:17:48,318 - botocore.endpoint - DEBUG - Making request for OperationModel(name=PutObject) with params: {'url_path': '/image_754.jpg', 'query_string': {}, 'method': 'PUT', 'headers': {'User-Agent': 'Boto3/1.34.94 md/Botocore#1.34.94 ua/2.0 os/linux#6.5.0-28-generic md/arch#x86_64 lang/python#3.11.9 md/pyimpl#CPython cfg/retry-mode#legacy Botocore/1.34.94', 'Content-MD5': 'XS0k98c4QCa9TXgjHRK6qg==', 'Expect': '100-continue'}, 'body': <s3transfer.utils.ReadFileChunk object at 0x77ff7104a450>, 'auth_path': '/itam-proyecto-saraluz/image_754.jpg', 'url': 'https://itam-proyecto-saraluz.s3.amazonaws.com/image_754.jpg', 'context': {'client_region': 'us-east-1', 'client_config': <botocore.config.Config object at 0x77ff71014190>, 'has_streaming_input': True, 'auth_type': 'v4', 's3_redirect': {'redirected': False, 'bucket': 'itam-proyecto-saraluz', 'params': {'Bucket': 'itam-proyecto-saraluz', 'Key': 'image_754.jpg', 'Body': <s3transfer.utils.ReadFileChunk object at 0x77ff7104a450>}}, 'input_params': {'Bucket': 'itam-proyecto-saraluz', 'Key': 'image_754.jpg'}, 'signing': {'region': 'us-east-1', 'signing_name': 's3', 'disableDoubleEncoding': True}, 'endpoint_properties': {'authSchemes': [{'disableDoubleEncoding': True, 'name': 'sigv4', 'signingName': 's3', 'signingRegion': 'us-east-1'}]}}}
+2024-05-22 13:17:48,319 - botocore.hooks - DEBUG - Event request-created.s3.PutObject: calling handler <function signal_not_transferring at 0x77ff70f8fec0>
+2024-05-22 13:17:48,319 - botocore.hooks - DEBUG - Event request-created.s3.PutObject: calling handler <bound method RequestSigner.handler of <botocore.signers.RequestSigner object at 0x77ff71014150>>
+2024-05-22 13:17:48,319 - botocore.hooks - DEBUG - Event choose-signer.s3.PutObject: calling handler <bound method ClientCreator._default_s3_presign_to_sigv2 of <botocore.client.ClientCreator object at 0x77ff711ab2d0>>
+2024-05-22 13:17:48,319 - botocore.hooks - DEBUG - Event choose-signer.s3.PutObject: calling handler <function set_operation_specific_signer at 0x77ff71e449a0>
+2024-05-22 13:17:48,320 - botocore.hooks - DEBUG - Event before-sign.s3.PutObject: calling handler <function remove_arn_from_signing_path at 0x77ff71e46f20>
+2024-05-22 13:17:48,320 - botocore.hooks - DEBUG - Event before-sign.s3.PutObject: calling handler <bound method S3ExpressIdentityResolver.resolve_s3express_identity of <botocore.utils.S3ExpressIdentityResolver object at 0x77ff71027550>>
+2024-05-22 13:17:48,320 - botocore.auth - DEBUG - Calculating signature using v4 auth.
+2024-05-22 13:17:48,321 - botocore.auth - DEBUG - CanonicalRequest:
+PUT
+/image_754.jpg
+
+content-md5:XS0k98c4QCa9TXgjHRK6qg==
+host:itam-proyecto-saraluz.s3.amazonaws.com
+x-amz-content-sha256:UNSIGNED-PAYLOAD
+x-amz-date:20240522T191748Z
+
+content-md5;host;x-amz-content-sha256;x-amz-date
+UNSIGNED-PAYLOAD
+2024-05-22 13:17:48,321 - botocore.auth - DEBUG - StringToSign:
+AWS4-HMAC-SHA256
+20240522T191748Z
+20240522/us-east-1/s3/aws4_request
+7a176e66aa4d49cb94792827d794a50739901b0bac6f95a31d18e22df8edf0db
+2024-05-22 13:17:48,321 - botocore.auth - DEBUG - Signature:
+8d1b8397eb5386fb8c0c115bf6c64305206bae7e6b507064890791bac006dd10
+2024-05-22 13:17:48,322 - botocore.hooks - DEBUG - Event request-created.s3.PutObject: calling handler <function signal_transferring at 0x77ff70f8ff60>
+2024-05-22 13:17:48,322 - botocore.hooks - DEBUG - Event request-created.s3.PutObject: calling handler <function add_retry_headers at 0x77ff71e46d40>
+2024-05-22 13:17:48,322 - botocore.endpoint - DEBUG - Sending http request: <AWSPreparedRequest stream_output=False, method=PUT, url=https://itam-proyecto-saraluz.s3.amazonaws.com/image_754.jpg, headers={'User-Agent': b'Boto3/1.34.94 md/Botocore#1.34.94 ua/2.0 os/linux#6.5.0-28-generic md/arch#x86_64 lang/python#3.11.9 md/pyimpl#CPython cfg/retry-mode#legacy Botocore/1.34.94', 'Content-MD5': b'XS0k98c4QCa9TXgjHRK6qg==', 'Expect': b'100-continue', 'X-Amz-Date': b'20240522T191748Z', 'X-Amz-Content-SHA256': b'UNSIGNED-PAYLOAD', 'Authorization': b'AWS4-HMAC-SHA256 Credential=AKIATCKANBUOWY4H4D4O/20240522/us-east-1/s3/aws4_request, SignedHeaders=content-md5;host;x-amz-content-sha256;x-amz-date, Signature=8d1b8397eb5386fb8c0c115bf6c64305206bae7e6b507064890791bac006dd10', 'amz-sdk-invocation-id': b'c7e1f515-1f44-4f82-a265-50bb5394958a', 'amz-sdk-request': b'attempt=1', 'Content-Length': '9215'}>
+2024-05-22 13:17:48,323 - botocore.httpsession - DEBUG - Certificate path: /home/saraluz/miniconda3/envs/arquitectura/lib/python3.11/site-packages/certifi/cacert.pem
+2024-05-22 13:17:48,324 - botocore.awsrequest - DEBUG - Waiting for 100 Continue response.
+2024-05-22 13:17:48,397 - botocore.awsrequest - DEBUG - 100 Continue response seen, now sending request body.
+2024-05-22 13:17:48,478 - urllib3.connectionpool - DEBUG - https://itam-proyecto-saraluz.s3.amazonaws.com:443 "PUT /image_754.jpg HTTP/1.1" 200 0
+2024-05-22 13:17:48,479 - botocore.parsers - DEBUG - Response headers: {'x-amz-id-2': 'qfOLLywvfZvvtUe5MZl0uNBtBH1JvwTB8ks3gRClCNzKAZcsdQWS6rE9uZc8nrKikL3jN4nZlqjjdBQLqENbsULw5JROMrro4vuCBvkoN6U=', 'x-amz-request-id': '554M0FEP20RRV0QJ', 'Date': 'Wed, 22 May 2024 19:17:49 GMT', 'x-amz-server-side-encryption': 'AES256', 'ETag': '"5d2d24f7c7384026bd4d78231d12baaa"', 'Server': 'AmazonS3', 'Content-Length': '0'}
+2024-05-22 13:17:48,480 - botocore.parsers - DEBUG - Response body:
+b''
+2024-05-22 13:17:48,480 - botocore.hooks - DEBUG - Event needs-retry.s3.PutObject: calling handler <botocore.retryhandler.RetryHandler object at 0x77ff723debd0>
+2024-05-22 13:17:48,481 - botocore.retryhandler - DEBUG - No retry needed.
+2024-05-22 13:17:48,481 - botocore.hooks - DEBUG - Event needs-retry.s3.PutObject: calling handler <bound method S3RegionRedirectorv2.redirect_from_error of <botocore.utils.S3RegionRedirectorv2 object at 0x77ff710b2b50>>
+2024-05-22 13:17:48,482 - s3transfer.utils - DEBUG - Releasing acquire 0/None
+2024-05-22 13:17:48,483 - boto3.s3.transfer - DEBUG - Opting out of CRT Transfer Manager. Preferred client: auto, CRT available: False, Instance Optimized: False.
+2024-05-22 13:17:48,483 - boto3.s3.transfer - DEBUG - Using default client. pid: 17656, thread: 131940269066048
+2024-05-22 13:17:48,485 - s3transfer.utils - DEBUG - Acquiring 0
+2024-05-22 13:17:48,485 - s3transfer.tasks - DEBUG - UploadSubmissionTask(transfer_id=0, {'transfer_future': <s3transfer.futures.TransferFuture object at 0x77ff7104b790>}) about to wait for the following futures []
+2024-05-22 13:17:48,486 - s3transfer.tasks - DEBUG - UploadSubmissionTask(transfer_id=0, {'transfer_future': <s3transfer.futures.TransferFuture object at 0x77ff7104b790>}) done waiting for dependent futures
+2024-05-22 13:17:48,486 - s3transfer.tasks - DEBUG - Executing task UploadSubmissionTask(transfer_id=0, {'transfer_future': <s3transfer.futures.TransferFuture object at 0x77ff7104b790>}) with kwargs {'client': <botocore.client.S3 object at 0x77ff710a2210>, 'config': <boto3.s3.transfer.TransferConfig object at 0x77ff711aa990>, 'osutil': <s3transfer.utils.OSUtils object at 0x77ff72c38a90>, 'request_executor': <s3transfer.futures.BoundedExecutor object at 0x77ff71027b50>, 'transfer_future': <s3transfer.futures.TransferFuture object at 0x77ff7104b790>}
+2024-05-22 13:17:48,487 - s3transfer.futures - DEBUG - Submitting task PutObjectTask(transfer_id=0, {'bucket': 'itam-proyecto-saraluz', 'key': 'image_696.jpg', 'extra_args': {}}) to executor <s3transfer.futures.BoundedExecutor object at 0x77ff71027b50> for transfer request: 0.
+2024-05-22 13:17:48,487 - s3transfer.utils - DEBUG - Acquiring 0
+2024-05-22 13:17:48,488 - s3transfer.tasks - DEBUG - PutObjectTask(transfer_id=0, {'bucket': 'itam-proyecto-saraluz', 'key': 'image_696.jpg', 'extra_args': {}}) about to wait for the following futures []
+2024-05-22 13:17:48,488 - s3transfer.utils - DEBUG - Releasing acquire 0/None
+2024-05-22 13:17:48,489 - s3transfer.tasks - DEBUG - PutObjectTask(transfer_id=0, {'bucket': 'itam-proyecto-saraluz', 'key': 'image_696.jpg', 'extra_args': {}}) done waiting for dependent futures
+2024-05-22 13:17:48,489 - s3transfer.tasks - DEBUG - Executing task PutObjectTask(transfer_id=0, {'bucket': 'itam-proyecto-saraluz', 'key': 'image_696.jpg', 'extra_args': {}}) with kwargs {'client': <botocore.client.S3 object at 0x77ff710a2210>, 'fileobj': <s3transfer.utils.ReadFileChunk object at 0x77ff7046c650>, 'bucket': 'itam-proyecto-saraluz', 'key': 'image_696.jpg', 'extra_args': {}}
+2024-05-22 13:17:48,490 - botocore.hooks - DEBUG - Event before-parameter-build.s3.PutObject: calling handler <function validate_ascii_metadata at 0x77ff71e45a80>
+2024-05-22 13:17:48,490 - botocore.hooks - DEBUG - Event before-parameter-build.s3.PutObject: calling handler <function sse_md5 at 0x77ff71e44d60>
+2024-05-22 13:17:48,490 - botocore.hooks - DEBUG - Event before-parameter-build.s3.PutObject: calling handler <function convert_body_to_file_like_object at 0x77ff71e46480>
+2024-05-22 13:17:48,490 - botocore.hooks - DEBUG - Event before-parameter-build.s3.PutObject: calling handler <function validate_bucket_name at 0x77ff71e44cc0>
+2024-05-22 13:17:48,491 - botocore.hooks - DEBUG - Event before-parameter-build.s3.PutObject: calling handler <function remove_bucket_from_url_paths_from_model at 0x77ff71e46de0>
+2024-05-22 13:17:48,491 - botocore.hooks - DEBUG - Event before-parameter-build.s3.PutObject: calling handler <bound method S3RegionRedirectorv2.annotate_request_context of <botocore.utils.S3RegionRedirectorv2 object at 0x77ff710b2b50>>
+2024-05-22 13:17:48,491 - botocore.hooks - DEBUG - Event before-parameter-build.s3.PutObject: calling handler <bound method ClientCreator._inject_s3_input_parameters of <botocore.client.ClientCreator object at 0x77ff711ab2d0>>
+2024-05-22 13:17:48,491 - botocore.hooks - DEBUG - Event before-parameter-build.s3.PutObject: calling handler <function generate_idempotent_uuid at 0x77ff71e44ae0>
+2024-05-22 13:17:48,492 - botocore.hooks - DEBUG - Event before-endpoint-resolution.s3: calling handler <function customize_endpoint_resolver_builtins at 0x77ff71e46fc0>
+2024-05-22 13:17:48,492 - botocore.hooks - DEBUG - Event before-endpoint-resolution.s3: calling handler <bound method S3RegionRedirectorv2.redirect_from_cache of <botocore.utils.S3RegionRedirectorv2 object at 0x77ff710b2b50>>
+2024-05-22 13:17:48,493 - botocore.regions - DEBUG - Calling endpoint provider with parameters: {'Bucket': 'itam-proyecto-saraluz', 'Region': 'us-east-1', 'UseFIPS': False, 'UseDualStack': False, 'ForcePathStyle': False, 'Accelerate': False, 'UseGlobalEndpoint': True, 'Key': 'image_696.jpg', 'DisableMultiRegionAccessPoints': False, 'UseArnRegion': True}
+2024-05-22 13:17:48,494 - botocore.regions - DEBUG - Endpoint provider result: https://itam-proyecto-saraluz.s3.amazonaws.com
+2024-05-22 13:17:48,495 - botocore.regions - DEBUG - Selecting from endpoint provider's list of auth schemes: "sigv4". User selected auth scheme is: "None"
+2024-05-22 13:17:48,495 - botocore.regions - DEBUG - Selected auth type "v4" as "v4" with signing context params: {'region': 'us-east-1', 'signing_name': 's3', 'disableDoubleEncoding': True}
+2024-05-22 13:17:48,496 - botocore.hooks - DEBUG - Event before-call.s3.PutObject: calling handler <function conditionally_calculate_checksum at 0x77ff72093600>
+2024-05-22 13:17:48,496 - botocore.hooks - DEBUG - Event before-call.s3.PutObject: calling handler <function add_expect_header at 0x77ff71e45080>
+2024-05-22 13:17:48,496 - botocore.handlers - DEBUG - Adding expect 100 continue header to request.
+2024-05-22 13:17:48,497 - botocore.hooks - DEBUG - Event before-call.s3.PutObject: calling handler <bound method S3ExpressIdentityResolver.apply_signing_cache_key of <botocore.utils.S3ExpressIdentityResolver object at 0x77ff71027550>>
+2024-05-22 13:17:48,497 - botocore.hooks - DEBUG - Event before-call.s3.PutObject: calling handler <function add_recursion_detection_header at 0x77ff71e2b380>
+2024-05-22 13:17:48,497 - botocore.hooks - DEBUG - Event before-call.s3.PutObject: calling handler <function inject_api_version_header_if_needed at 0x77ff71e465c0>
+2024-05-22 13:17:48,497 - botocore.endpoint - DEBUG - Making request for OperationModel(name=PutObject) with params: {'url_path': '/image_696.jpg', 'query_string': {}, 'method': 'PUT', 'headers': {'User-Agent': 'Boto3/1.34.94 md/Botocore#1.34.94 ua/2.0 os/linux#6.5.0-28-generic md/arch#x86_64 lang/python#3.11.9 md/pyimpl#CPython cfg/retry-mode#legacy Botocore/1.34.94', 'Content-MD5': 'PKIxUQpTRX40XWX34WCwDw==', 'Expect': '100-continue'}, 'body': <s3transfer.utils.ReadFileChunk object at 0x77ff7046c650>, 'auth_path': '/itam-proyecto-saraluz/image_696.jpg', 'url': 'https://itam-proyecto-saraluz.s3.amazonaws.com/image_696.jpg', 'context': {'client_region': 'us-east-1', 'client_config': <botocore.config.Config object at 0x77ff71014190>, 'has_streaming_input': True, 'auth_type': 'v4', 's3_redirect': {'redirected': False, 'bucket': 'itam-proyecto-saraluz', 'params': {'Bucket': 'itam-proyecto-saraluz', 'Key': 'image_696.jpg', 'Body': <s3transfer.utils.ReadFileChunk object at 0x77ff7046c650>}}, 'input_params': {'Bucket': 'itam-proyecto-saraluz', 'Key': 'image_696.jpg'}, 'signing': {'region': 'us-east-1', 'signing_name': 's3', 'disableDoubleEncoding': True}, 'endpoint_properties': {'authSchemes': [{'disableDoubleEncoding': True, 'name': 'sigv4', 'signingName': 's3', 'signingRegion': 'us-east-1'}]}}}
+2024-05-22 13:17:48,498 - botocore.hooks - DEBUG - Event request-created.s3.PutObject: calling handler <function signal_not_transferring at 0x77ff70f8fec0>
+2024-05-22 13:17:48,498 - botocore.hooks - DEBUG - Event request-created.s3.PutObject: calling handler <bound method RequestSigner.handler of <botocore.signers.RequestSigner object at 0x77ff71014150>>
+2024-05-22 13:17:48,499 - botocore.hooks - DEBUG - Event choose-signer.s3.PutObject: calling handler <bound method ClientCreator._default_s3_presign_to_sigv2 of <botocore.client.ClientCreator object at 0x77ff711ab2d0>>
+2024-05-22 13:17:48,499 - botocore.hooks - DEBUG - Event choose-signer.s3.PutObject: calling handler <function set_operation_specific_signer at 0x77ff71e449a0>
+2024-05-22 13:17:48,499 - botocore.hooks - DEBUG - Event before-sign.s3.PutObject: calling handler <function remove_arn_from_signing_path at 0x77ff71e46f20>
+2024-05-22 13:17:48,500 - botocore.hooks - DEBUG - Event before-sign.s3.PutObject: calling handler <bound method S3ExpressIdentityResolver.resolve_s3express_identity of <botocore.utils.S3ExpressIdentityResolver object at 0x77ff71027550>>
+2024-05-22 13:17:48,500 - botocore.auth - DEBUG - Calculating signature using v4 auth.
+2024-05-22 13:17:48,501 - botocore.auth - DEBUG - CanonicalRequest:
+PUT
+/image_696.jpg
+
+content-md5:PKIxUQpTRX40XWX34WCwDw==
+host:itam-proyecto-saraluz.s3.amazonaws.com
+x-amz-content-sha256:UNSIGNED-PAYLOAD
+x-amz-date:20240522T191748Z
+
+content-md5;host;x-amz-content-sha256;x-amz-date
+UNSIGNED-PAYLOAD
+2024-05-22 13:17:48,501 - botocore.auth - DEBUG - StringToSign:
+AWS4-HMAC-SHA256
+20240522T191748Z
+20240522/us-east-1/s3/aws4_request
+4343d5dcf2f890322bcb6738ac903bafe123db1ed03861778582ee64e0f1d9d2
+2024-05-22 13:17:48,501 - botocore.auth - DEBUG - Signature:
+157024964daffaa1354f7dac70301d94f9f88fc7ebb92d6e0f3762918f47ddd9
+2024-05-22 13:17:48,502 - botocore.hooks - DEBUG - Event request-created.s3.PutObject: calling handler <function signal_transferring at 0x77ff70f8ff60>
+2024-05-22 13:17:48,502 - botocore.hooks - DEBUG - Event request-created.s3.PutObject: calling handler <function add_retry_headers at 0x77ff71e46d40>
+2024-05-22 13:17:48,503 - botocore.endpoint - DEBUG - Sending http request: <AWSPreparedRequest stream_output=False, method=PUT, url=https://itam-proyecto-saraluz.s3.amazonaws.com/image_696.jpg, headers={'User-Agent': b'Boto3/1.34.94 md/Botocore#1.34.94 ua/2.0 os/linux#6.5.0-28-generic md/arch#x86_64 lang/python#3.11.9 md/pyimpl#CPython cfg/retry-mode#legacy Botocore/1.34.94', 'Content-MD5': b'PKIxUQpTRX40XWX34WCwDw==', 'Expect': b'100-continue', 'X-Amz-Date': b'20240522T191748Z', 'X-Amz-Content-SHA256': b'UNSIGNED-PAYLOAD', 'Authorization': b'AWS4-HMAC-SHA256 Credential=AKIATCKANBUOWY4H4D4O/20240522/us-east-1/s3/aws4_request, SignedHeaders=content-md5;host;x-amz-content-sha256;x-amz-date, Signature=157024964daffaa1354f7dac70301d94f9f88fc7ebb92d6e0f3762918f47ddd9', 'amz-sdk-invocation-id': b'a197d7fe-b469-491f-84fd-2b44ee72ddbd', 'amz-sdk-request': b'attempt=1', 'Content-Length': '6436'}>
+2024-05-22 13:17:48,503 - botocore.httpsession - DEBUG - Certificate path: /home/saraluz/miniconda3/envs/arquitectura/lib/python3.11/site-packages/certifi/cacert.pem
+2024-05-22 13:17:48,505 - botocore.awsrequest - DEBUG - Waiting for 100 Continue response.
+2024-05-22 13:17:48,576 - botocore.awsrequest - DEBUG - 100 Continue response seen, now sending request body.
+2024-05-22 13:17:48,657 - urllib3.connectionpool - DEBUG - https://itam-proyecto-saraluz.s3.amazonaws.com:443 "PUT /image_696.jpg HTTP/1.1" 200 0
+2024-05-22 13:17:48,657 - botocore.parsers - DEBUG - Response headers: {'x-amz-id-2': 'MGlRxf6bswoMb/Nop65x1SQY25RvpMXeOgnydiXHh0/iImUwx2Zk6pFrpOqHofEAv6VPfl6OOlTnbeNGH6+dpvliScHLqslKcuKYQX5BQxw=', 'x-amz-request-id': '554V78CHPSM7SMS8', 'Date': 'Wed, 22 May 2024 19:17:49 GMT', 'x-amz-server-side-encryption': 'AES256', 'ETag': '"3ca231510a53457e345d65f7e160b00f"', 'Server': 'AmazonS3', 'Content-Length': '0'}
+2024-05-22 13:17:48,658 - botocore.parsers - DEBUG - Response body:
+b''
+2024-05-22 13:17:48,658 - botocore.hooks - DEBUG - Event needs-retry.s3.PutObject: calling handler <botocore.retryhandler.RetryHandler object at 0x77ff723debd0>
+2024-05-22 13:17:48,659 - botocore.retryhandler - DEBUG - No retry needed.
+2024-05-22 13:17:48,659 - botocore.hooks - DEBUG - Event needs-retry.s3.PutObject: calling handler <bound method S3RegionRedirectorv2.redirect_from_error of <botocore.utils.S3RegionRedirectorv2 object at 0x77ff710b2b50>>
+2024-05-22 13:17:48,659 - s3transfer.utils - DEBUG - Releasing acquire 0/None
+2024-05-22 13:17:48,660 - boto3.s3.transfer - DEBUG - Opting out of CRT Transfer Manager. Preferred client: auto, CRT available: False, Instance Optimized: False.
+2024-05-22 13:17:48,660 - boto3.s3.transfer - DEBUG - Using default client. pid: 17656, thread: 131940269066048
+2024-05-22 13:17:48,661 - s3transfer.utils - DEBUG - Acquiring 0
+2024-05-22 13:17:48,662 - s3transfer.tasks - DEBUG - UploadSubmissionTask(transfer_id=0, {'transfer_future': <s3transfer.futures.TransferFuture object at 0x77ff7046d450>}) about to wait for the following futures []
+2024-05-22 13:17:48,662 - s3transfer.tasks - DEBUG - UploadSubmissionTask(transfer_id=0, {'transfer_future': <s3transfer.futures.TransferFuture object at 0x77ff7046d450>}) done waiting for dependent futures
+2024-05-22 13:17:48,662 - s3transfer.tasks - DEBUG - Executing task UploadSubmissionTask(transfer_id=0, {'transfer_future': <s3transfer.futures.TransferFuture object at 0x77ff7046d450>}) with kwargs {'client': <botocore.client.S3 object at 0x77ff710a2210>, 'config': <boto3.s3.transfer.TransferConfig object at 0x77ff726251d0>, 'osutil': <s3transfer.utils.OSUtils object at 0x77ff73187ed0>, 'request_executor': <s3transfer.futures.BoundedExecutor object at 0x77ff71027990>, 'transfer_future': <s3transfer.futures.TransferFuture object at 0x77ff7046d450>}
+2024-05-22 13:17:48,663 - s3transfer.futures - DEBUG - Submitting task PutObjectTask(transfer_id=0, {'bucket': 'itam-proyecto-saraluz', 'key': 'image_828.jpg', 'extra_args': {}}) to executor <s3transfer.futures.BoundedExecutor object at 0x77ff71027990> for transfer request: 0.
+2024-05-22 13:17:48,663 - s3transfer.utils - DEBUG - Acquiring 0
+2024-05-22 13:17:48,664 - s3transfer.tasks - DEBUG - PutObjectTask(transfer_id=0, {'bucket': 'itam-proyecto-saraluz', 'key': 'image_828.jpg', 'extra_args': {}}) about to wait for the following futures []
+2024-05-22 13:17:48,664 - s3transfer.utils - DEBUG - Releasing acquire 0/None
+2024-05-22 13:17:48,665 - s3transfer.tasks - DEBUG - PutObjectTask(transfer_id=0, {'bucket': 'itam-proyecto-saraluz', 'key': 'image_828.jpg', 'extra_args': {}}) done waiting for dependent futures
+2024-05-22 13:17:48,665 - s3transfer.tasks - DEBUG - Executing task PutObjectTask(transfer_id=0, {'bucket': 'itam-proyecto-saraluz', 'key': 'image_828.jpg', 'extra_args': {}}) with kwargs {'client': <botocore.client.S3 object at 0x77ff710a2210>, 'fileobj': <s3transfer.utils.ReadFileChunk object at 0x77ff7046e150>, 'bucket': 'itam-proyecto-saraluz', 'key': 'image_828.jpg', 'extra_args': {}}
+2024-05-22 13:17:48,666 - botocore.hooks - DEBUG - Event before-parameter-build.s3.PutObject: calling handler <function validate_ascii_metadata at 0x77ff71e45a80>
+2024-05-22 13:17:48,666 - botocore.hooks - DEBUG - Event before-parameter-build.s3.PutObject: calling handler <function sse_md5 at 0x77ff71e44d60>
+2024-05-22 13:17:48,666 - botocore.hooks - DEBUG - Event before-parameter-build.s3.PutObject: calling handler <function convert_body_to_file_like_object at 0x77ff71e46480>
+2024-05-22 13:17:48,666 - botocore.hooks - DEBUG - Event before-parameter-build.s3.PutObject: calling handler <function validate_bucket_name at 0x77ff71e44cc0>
+2024-05-22 13:17:48,666 - botocore.hooks - DEBUG - Event before-parameter-build.s3.PutObject: calling handler <function remove_bucket_from_url_paths_from_model at 0x77ff71e46de0>
+2024-05-22 13:17:48,666 - botocore.hooks - DEBUG - Event before-parameter-build.s3.PutObject: calling handler <bound method S3RegionRedirectorv2.annotate_request_context of <botocore.utils.S3RegionRedirectorv2 object at 0x77ff710b2b50>>
+2024-05-22 13:17:48,666 - botocore.hooks - DEBUG - Event before-parameter-build.s3.PutObject: calling handler <bound method ClientCreator._inject_s3_input_parameters of <botocore.client.ClientCreator object at 0x77ff711ab2d0>>
+2024-05-22 13:17:48,667 - botocore.hooks - DEBUG - Event before-parameter-build.s3.PutObject: calling handler <function generate_idempotent_uuid at 0x77ff71e44ae0>
+2024-05-22 13:17:48,667 - botocore.hooks - DEBUG - Event before-endpoint-resolution.s3: calling handler <function customize_endpoint_resolver_builtins at 0x77ff71e46fc0>
+2024-05-22 13:17:48,667 - botocore.hooks - DEBUG - Event before-endpoint-resolution.s3: calling handler <bound method S3RegionRedirectorv2.redirect_from_cache of <botocore.utils.S3RegionRedirectorv2 object at 0x77ff710b2b50>>
+2024-05-22 13:17:48,667 - botocore.regions - DEBUG - Calling endpoint provider with parameters: {'Bucket': 'itam-proyecto-saraluz', 'Region': 'us-east-1', 'UseFIPS': False, 'UseDualStack': False, 'ForcePathStyle': False, 'Accelerate': False, 'UseGlobalEndpoint': True, 'Key': 'image_828.jpg', 'DisableMultiRegionAccessPoints': False, 'UseArnRegion': True}
+2024-05-22 13:17:48,668 - botocore.regions - DEBUG - Endpoint provider result: https://itam-proyecto-saraluz.s3.amazonaws.com
+2024-05-22 13:17:48,669 - botocore.regions - DEBUG - Selecting from endpoint provider's list of auth schemes: "sigv4". User selected auth scheme is: "None"
+2024-05-22 13:17:48,669 - botocore.regions - DEBUG - Selected auth type "v4" as "v4" with signing context params: {'region': 'us-east-1', 'signing_name': 's3', 'disableDoubleEncoding': True}
+2024-05-22 13:17:48,669 - botocore.hooks - DEBUG - Event before-call.s3.PutObject: calling handler <function conditionally_calculate_checksum at 0x77ff72093600>
+2024-05-22 13:17:48,670 - botocore.hooks - DEBUG - Event before-call.s3.PutObject: calling handler <function add_expect_header at 0x77ff71e45080>
+2024-05-22 13:17:48,670 - botocore.handlers - DEBUG - Adding expect 100 continue header to request.
+2024-05-22 13:17:48,670 - botocore.hooks - DEBUG - Event before-call.s3.PutObject: calling handler <bound method S3ExpressIdentityResolver.apply_signing_cache_key of <botocore.utils.S3ExpressIdentityResolver object at 0x77ff71027550>>
+2024-05-22 13:17:48,671 - botocore.hooks - DEBUG - Event before-call.s3.PutObject: calling handler <function add_recursion_detection_header at 0x77ff71e2b380>
+2024-05-22 13:17:48,671 - botocore.hooks - DEBUG - Event before-call.s3.PutObject: calling handler <function inject_api_version_header_if_needed at 0x77ff71e465c0>
+2024-05-22 13:17:48,671 - botocore.endpoint - DEBUG - Making request for OperationModel(name=PutObject) with params: {'url_path': '/image_828.jpg', 'query_string': {}, 'method': 'PUT', 'headers': {'User-Agent': 'Boto3/1.34.94 md/Botocore#1.34.94 ua/2.0 os/linux#6.5.0-28-generic md/arch#x86_64 lang/python#3.11.9 md/pyimpl#CPython cfg/retry-mode#legacy Botocore/1.34.94', 'Content-MD5': 'WYKI61XCSfqSrw/cNgO0tQ==', 'Expect': '100-continue'}, 'body': <s3transfer.utils.ReadFileChunk object at 0x77ff7046e150>, 'auth_path': '/itam-proyecto-saraluz/image_828.jpg', 'url': 'https://itam-proyecto-saraluz.s3.amazonaws.com/image_828.jpg', 'context': {'client_region': 'us-east-1', 'client_config': <botocore.config.Config object at 0x77ff71014190>, 'has_streaming_input': True, 'auth_type': 'v4', 's3_redirect': {'redirected': False, 'bucket': 'itam-proyecto-saraluz', 'params': {'Bucket': 'itam-proyecto-saraluz', 'Key': 'image_828.jpg', 'Body': <s3transfer.utils.ReadFileChunk object at 0x77ff7046e150>}}, 'input_params': {'Bucket': 'itam-proyecto-saraluz', 'Key': 'image_828.jpg'}, 'signing': {'region': 'us-east-1', 'signing_name': 's3', 'disableDoubleEncoding': True}, 'endpoint_properties': {'authSchemes': [{'disableDoubleEncoding': True, 'name': 'sigv4', 'signingName': 's3', 'signingRegion': 'us-east-1'}]}}}
+2024-05-22 13:17:48,671 - botocore.hooks - DEBUG - Event request-created.s3.PutObject: calling handler <function signal_not_transferring at 0x77ff70f8fec0>
+2024-05-22 13:17:48,672 - botocore.hooks - DEBUG - Event request-created.s3.PutObject: calling handler <bound method RequestSigner.handler of <botocore.signers.RequestSigner object at 0x77ff71014150>>
+2024-05-22 13:17:48,672 - botocore.hooks - DEBUG - Event choose-signer.s3.PutObject: calling handler <bound method ClientCreator._default_s3_presign_to_sigv2 of <botocore.client.ClientCreator object at 0x77ff711ab2d0>>
+2024-05-22 13:17:48,672 - botocore.hooks - DEBUG - Event choose-signer.s3.PutObject: calling handler <function set_operation_specific_signer at 0x77ff71e449a0>
+2024-05-22 13:17:48,672 - botocore.hooks - DEBUG - Event before-sign.s3.PutObject: calling handler <function remove_arn_from_signing_path at 0x77ff71e46f20>
+2024-05-22 13:17:48,672 - botocore.hooks - DEBUG - Event before-sign.s3.PutObject: calling handler <bound method S3ExpressIdentityResolver.resolve_s3express_identity of <botocore.utils.S3ExpressIdentityResolver object at 0x77ff71027550>>
+2024-05-22 13:17:48,673 - botocore.auth - DEBUG - Calculating signature using v4 auth.
+2024-05-22 13:17:48,673 - botocore.auth - DEBUG - CanonicalRequest:
+PUT
+/image_828.jpg
+
+content-md5:WYKI61XCSfqSrw/cNgO0tQ==
+host:itam-proyecto-saraluz.s3.amazonaws.com
+x-amz-content-sha256:UNSIGNED-PAYLOAD
+x-amz-date:20240522T191748Z
+
+content-md5;host;x-amz-content-sha256;x-amz-date
+UNSIGNED-PAYLOAD
+2024-05-22 13:17:48,673 - botocore.auth - DEBUG - StringToSign:
+AWS4-HMAC-SHA256
+20240522T191748Z
+20240522/us-east-1/s3/aws4_request
+292cc369dd758c213b27907469641d0290446a7573931f73d52241924a2ac2f3
+2024-05-22 13:17:48,673 - botocore.auth - DEBUG - Signature:
+eb57f6ffffc7461a18a6b9224c8d0e03fcdf79534395399e74199dbbb64f5622
+2024-05-22 13:17:48,674 - botocore.hooks - DEBUG - Event request-created.s3.PutObject: calling handler <function signal_transferring at 0x77ff70f8ff60>
+2024-05-22 13:17:48,674 - botocore.hooks - DEBUG - Event request-created.s3.PutObject: calling handler <function add_retry_headers at 0x77ff71e46d40>
+2024-05-22 13:17:48,674 - botocore.endpoint - DEBUG - Sending http request: <AWSPreparedRequest stream_output=False, method=PUT, url=https://itam-proyecto-saraluz.s3.amazonaws.com/image_828.jpg, headers={'User-Agent': b'Boto3/1.34.94 md/Botocore#1.34.94 ua/2.0 os/linux#6.5.0-28-generic md/arch#x86_64 lang/python#3.11.9 md/pyimpl#CPython cfg/retry-mode#legacy Botocore/1.34.94', 'Content-MD5': b'WYKI61XCSfqSrw/cNgO0tQ==', 'Expect': b'100-continue', 'X-Amz-Date': b'20240522T191748Z', 'X-Amz-Content-SHA256': b'UNSIGNED-PAYLOAD', 'Authorization': b'AWS4-HMAC-SHA256 Credential=AKIATCKANBUOWY4H4D4O/20240522/us-east-1/s3/aws4_request, SignedHeaders=content-md5;host;x-amz-content-sha256;x-amz-date, Signature=eb57f6ffffc7461a18a6b9224c8d0e03fcdf79534395399e74199dbbb64f5622', 'amz-sdk-invocation-id': b'71f044f9-23ba-49b9-9625-ee9ace71494f', 'amz-sdk-request': b'attempt=1', 'Content-Length': '19613'}>
+2024-05-22 13:17:48,675 - botocore.httpsession - DEBUG - Certificate path: /home/saraluz/miniconda3/envs/arquitectura/lib/python3.11/site-packages/certifi/cacert.pem
+2024-05-22 13:17:48,676 - botocore.awsrequest - DEBUG - Waiting for 100 Continue response.
+2024-05-22 13:17:48,750 - botocore.awsrequest - DEBUG - 100 Continue response seen, now sending request body.
+2024-05-22 13:17:48,841 - urllib3.connectionpool - DEBUG - https://itam-proyecto-saraluz.s3.amazonaws.com:443 "PUT /image_828.jpg HTTP/1.1" 200 0
+2024-05-22 13:17:48,841 - botocore.parsers - DEBUG - Response headers: {'x-amz-id-2': 'W2u6jBUKwLPzjhlkGAdKDIkBNkrEBHagWQTRpnjiU190cNz7i/8fPF2jJrFS3QETmMfDaHXB7Ln6y0iei6Ub4lNIKYHyQ07GCvTc3O0KSNI=', 'x-amz-request-id': '554YC9VWVQHRBXX3', 'Date': 'Wed, 22 May 2024 19:17:49 GMT', 'x-amz-server-side-encryption': 'AES256', 'ETag': '"598288eb55c249fa92af0fdc3603b4b5"', 'Server': 'AmazonS3', 'Content-Length': '0'}
+2024-05-22 13:17:48,842 - botocore.parsers - DEBUG - Response body:
+b''
+2024-05-22 13:17:48,842 - botocore.hooks - DEBUG - Event needs-retry.s3.PutObject: calling handler <botocore.retryhandler.RetryHandler object at 0x77ff723debd0>
+2024-05-22 13:17:48,842 - botocore.retryhandler - DEBUG - No retry needed.
+2024-05-22 13:17:48,843 - botocore.hooks - DEBUG - Event needs-retry.s3.PutObject: calling handler <bound method S3RegionRedirectorv2.redirect_from_error of <botocore.utils.S3RegionRedirectorv2 object at 0x77ff710b2b50>>
+2024-05-22 13:17:48,843 - s3transfer.utils - DEBUG - Releasing acquire 0/None
+2024-05-22 13:17:48,844 - boto3.s3.transfer - DEBUG - Opting out of CRT Transfer Manager. Preferred client: auto, CRT available: False, Instance Optimized: False.
+2024-05-22 13:17:48,844 - boto3.s3.transfer - DEBUG - Using default client. pid: 17656, thread: 131940269066048
+2024-05-22 13:17:48,845 - s3transfer.utils - DEBUG - Acquiring 0
+2024-05-22 13:17:48,846 - s3transfer.tasks - DEBUG - UploadSubmissionTask(transfer_id=0, {'transfer_future': <s3transfer.futures.TransferFuture object at 0x77ff7046ce90>}) about to wait for the following futures []
+2024-05-22 13:17:48,847 - s3transfer.tasks - DEBUG - UploadSubmissionTask(transfer_id=0, {'transfer_future': <s3transfer.futures.TransferFuture object at 0x77ff7046ce90>}) done waiting for dependent futures
+2024-05-22 13:17:48,847 - s3transfer.tasks - DEBUG - Executing task UploadSubmissionTask(transfer_id=0, {'transfer_future': <s3transfer.futures.TransferFuture object at 0x77ff7046ce90>}) with kwargs {'client': <botocore.client.S3 object at 0x77ff710a2210>, 'config': <boto3.s3.transfer.TransferConfig object at 0x77ff71096f10>, 'osutil': <s3transfer.utils.OSUtils object at 0x77ff711aa990>, 'request_executor': <s3transfer.futures.BoundedExecutor object at 0x77ff710b3290>, 'transfer_future': <s3transfer.futures.TransferFuture object at 0x77ff7046ce90>}
+2024-05-22 13:17:48,848 - s3transfer.futures - DEBUG - Submitting task PutObjectTask(transfer_id=0, {'bucket': 'itam-proyecto-saraluz', 'key': 'image_398.jpg', 'extra_args': {}}) to executor <s3transfer.futures.BoundedExecutor object at 0x77ff710b3290> for transfer request: 0.
+2024-05-22 13:17:48,848 - s3transfer.utils - DEBUG - Acquiring 0
+2024-05-22 13:17:48,849 - s3transfer.tasks - DEBUG - PutObjectTask(transfer_id=0, {'bucket': 'itam-proyecto-saraluz', 'key': 'image_398.jpg', 'extra_args': {}}) about to wait for the following futures []
+2024-05-22 13:17:48,849 - s3transfer.tasks - DEBUG - PutObjectTask(transfer_id=0, {'bucket': 'itam-proyecto-saraluz', 'key': 'image_398.jpg', 'extra_args': {}}) done waiting for dependent futures
+2024-05-22 13:17:48,850 - s3transfer.utils - DEBUG - Releasing acquire 0/None
+2024-05-22 13:17:48,850 - s3transfer.tasks - DEBUG - Executing task PutObjectTask(transfer_id=0, {'bucket': 'itam-proyecto-saraluz', 'key': 'image_398.jpg', 'extra_args': {}}) with kwargs {'client': <botocore.client.S3 object at 0x77ff710a2210>, 'fileobj': <s3transfer.utils.ReadFileChunk object at 0x77ff7046f090>, 'bucket': 'itam-proyecto-saraluz', 'key': 'image_398.jpg', 'extra_args': {}}
+2024-05-22 13:17:48,850 - botocore.hooks - DEBUG - Event before-parameter-build.s3.PutObject: calling handler <function validate_ascii_metadata at 0x77ff71e45a80>
+2024-05-22 13:17:48,851 - botocore.hooks - DEBUG - Event before-parameter-build.s3.PutObject: calling handler <function sse_md5 at 0x77ff71e44d60>
+2024-05-22 13:17:48,851 - botocore.hooks - DEBUG - Event before-parameter-build.s3.PutObject: calling handler <function convert_body_to_file_like_object at 0x77ff71e46480>
+2024-05-22 13:17:48,851 - botocore.hooks - DEBUG - Event before-parameter-build.s3.PutObject: calling handler <function validate_bucket_name at 0x77ff71e44cc0>
+2024-05-22 13:17:48,851 - botocore.hooks - DEBUG - Event before-parameter-build.s3.PutObject: calling handler <function remove_bucket_from_url_paths_from_model at 0x77ff71e46de0>
+2024-05-22 13:17:48,851 - botocore.hooks - DEBUG - Event before-parameter-build.s3.PutObject: calling handler <bound method S3RegionRedirectorv2.annotate_request_context of <botocore.utils.S3RegionRedirectorv2 object at 0x77ff710b2b50>>
+2024-05-22 13:17:48,851 - botocore.hooks - DEBUG - Event before-parameter-build.s3.PutObject: calling handler <bound method ClientCreator._inject_s3_input_parameters of <botocore.client.ClientCreator object at 0x77ff711ab2d0>>
+2024-05-22 13:17:48,851 - botocore.hooks - DEBUG - Event before-parameter-build.s3.PutObject: calling handler <function generate_idempotent_uuid at 0x77ff71e44ae0>
+2024-05-22 13:17:48,852 - botocore.hooks - DEBUG - Event before-endpoint-resolution.s3: calling handler <function customize_endpoint_resolver_builtins at 0x77ff71e46fc0>
+2024-05-22 13:17:48,852 - botocore.hooks - DEBUG - Event before-endpoint-resolution.s3: calling handler <bound method S3RegionRedirectorv2.redirect_from_cache of <botocore.utils.S3RegionRedirectorv2 object at 0x77ff710b2b50>>
+2024-05-22 13:17:48,852 - botocore.regions - DEBUG - Calling endpoint provider with parameters: {'Bucket': 'itam-proyecto-saraluz', 'Region': 'us-east-1', 'UseFIPS': False, 'UseDualStack': False, 'ForcePathStyle': False, 'Accelerate': False, 'UseGlobalEndpoint': True, 'Key': 'image_398.jpg', 'DisableMultiRegionAccessPoints': False, 'UseArnRegion': True}
+2024-05-22 13:17:48,853 - botocore.regions - DEBUG - Endpoint provider result: https://itam-proyecto-saraluz.s3.amazonaws.com
+2024-05-22 13:17:48,853 - botocore.regions - DEBUG - Selecting from endpoint provider's list of auth schemes: "sigv4". User selected auth scheme is: "None"
+2024-05-22 13:17:48,854 - botocore.regions - DEBUG - Selected auth type "v4" as "v4" with signing context params: {'region': 'us-east-1', 'signing_name': 's3', 'disableDoubleEncoding': True}
+2024-05-22 13:17:48,854 - botocore.hooks - DEBUG - Event before-call.s3.PutObject: calling handler <function conditionally_calculate_checksum at 0x77ff72093600>
+2024-05-22 13:17:48,855 - botocore.hooks - DEBUG - Event before-call.s3.PutObject: calling handler <function add_expect_header at 0x77ff71e45080>
+2024-05-22 13:17:48,855 - botocore.handlers - DEBUG - Adding expect 100 continue header to request.
+2024-05-22 13:17:48,855 - botocore.hooks - DEBUG - Event before-call.s3.PutObject: calling handler <bound method S3ExpressIdentityResolver.apply_signing_cache_key of <botocore.utils.S3ExpressIdentityResolver object at 0x77ff71027550>>
+2024-05-22 13:17:48,855 - botocore.hooks - DEBUG - Event before-call.s3.PutObject: calling handler <function add_recursion_detection_header at 0x77ff71e2b380>
+2024-05-22 13:17:48,856 - botocore.hooks - DEBUG - Event before-call.s3.PutObject: calling handler <function inject_api_version_header_if_needed at 0x77ff71e465c0>
+2024-05-22 13:17:48,856 - botocore.endpoint - DEBUG - Making request for OperationModel(name=PutObject) with params: {'url_path': '/image_398.jpg', 'query_string': {}, 'method': 'PUT', 'headers': {'User-Agent': 'Boto3/1.34.94 md/Botocore#1.34.94 ua/2.0 os/linux#6.5.0-28-generic md/arch#x86_64 lang/python#3.11.9 md/pyimpl#CPython cfg/retry-mode#legacy Botocore/1.34.94', 'Content-MD5': 'obw8DXMytZi2/4+LENM6yw==', 'Expect': '100-continue'}, 'body': <s3transfer.utils.ReadFileChunk object at 0x77ff7046f090>, 'auth_path': '/itam-proyecto-saraluz/image_398.jpg', 'url': 'https://itam-proyecto-saraluz.s3.amazonaws.com/image_398.jpg', 'context': {'client_region': 'us-east-1', 'client_config': <botocore.config.Config object at 0x77ff71014190>, 'has_streaming_input': True, 'auth_type': 'v4', 's3_redirect': {'redirected': False, 'bucket': 'itam-proyecto-saraluz', 'params': {'Bucket': 'itam-proyecto-saraluz', 'Key': 'image_398.jpg', 'Body': <s3transfer.utils.ReadFileChunk object at 0x77ff7046f090>}}, 'input_params': {'Bucket': 'itam-proyecto-saraluz', 'Key': 'image_398.jpg'}, 'signing': {'region': 'us-east-1', 'signing_name': 's3', 'disableDoubleEncoding': True}, 'endpoint_properties': {'authSchemes': [{'disableDoubleEncoding': True, 'name': 'sigv4', 'signingName': 's3', 'signingRegion': 'us-east-1'}]}}}
+2024-05-22 13:17:48,856 - botocore.hooks - DEBUG - Event request-created.s3.PutObject: calling handler <function signal_not_transferring at 0x77ff70f8fec0>
+2024-05-22 13:17:48,856 - botocore.hooks - DEBUG - Event request-created.s3.PutObject: calling handler <bound method RequestSigner.handler of <botocore.signers.RequestSigner object at 0x77ff71014150>>
+2024-05-22 13:17:48,857 - botocore.hooks - DEBUG - Event choose-signer.s3.PutObject: calling handler <bound method ClientCreator._default_s3_presign_to_sigv2 of <botocore.client.ClientCreator object at 0x77ff711ab2d0>>
+2024-05-22 13:17:48,857 - botocore.hooks - DEBUG - Event choose-signer.s3.PutObject: calling handler <function set_operation_specific_signer at 0x77ff71e449a0>
+2024-05-22 13:17:48,857 - botocore.hooks - DEBUG - Event before-sign.s3.PutObject: calling handler <function remove_arn_from_signing_path at 0x77ff71e46f20>
+2024-05-22 13:17:48,857 - botocore.hooks - DEBUG - Event before-sign.s3.PutObject: calling handler <bound method S3ExpressIdentityResolver.resolve_s3express_identity of <botocore.utils.S3ExpressIdentityResolver object at 0x77ff71027550>>
+2024-05-22 13:17:48,858 - botocore.auth - DEBUG - Calculating signature using v4 auth.
+2024-05-22 13:17:48,858 - botocore.auth - DEBUG - CanonicalRequest:
+PUT
+/image_398.jpg
+
+content-md5:obw8DXMytZi2/4+LENM6yw==
+host:itam-proyecto-saraluz.s3.amazonaws.com
+x-amz-content-sha256:UNSIGNED-PAYLOAD
+x-amz-date:20240522T191748Z
+
+content-md5;host;x-amz-content-sha256;x-amz-date
+UNSIGNED-PAYLOAD
+2024-05-22 13:17:48,858 - botocore.auth - DEBUG - StringToSign:
+AWS4-HMAC-SHA256
+20240522T191748Z
+20240522/us-east-1/s3/aws4_request
+cbecde8e261860e8094a309f6119a439e1f528f6d02933a3ed2e8d5ec2600665
+2024-05-22 13:17:48,858 - botocore.auth - DEBUG - Signature:
+b9ad7e3fb549288a48d6295dca73673aa776d7c4d9ca1d1fbb7839268eafcf5b
+2024-05-22 13:17:48,858 - botocore.hooks - DEBUG - Event request-created.s3.PutObject: calling handler <function signal_transferring at 0x77ff70f8ff60>
+2024-05-22 13:17:48,859 - botocore.hooks - DEBUG - Event request-created.s3.PutObject: calling handler <function add_retry_headers at 0x77ff71e46d40>
+2024-05-22 13:17:48,859 - botocore.endpoint - DEBUG - Sending http request: <AWSPreparedRequest stream_output=False, method=PUT, url=https://itam-proyecto-saraluz.s3.amazonaws.com/image_398.jpg, headers={'User-Agent': b'Boto3/1.34.94 md/Botocore#1.34.94 ua/2.0 os/linux#6.5.0-28-generic md/arch#x86_64 lang/python#3.11.9 md/pyimpl#CPython cfg/retry-mode#legacy Botocore/1.34.94', 'Content-MD5': b'obw8DXMytZi2/4+LENM6yw==', 'Expect': b'100-continue', 'X-Amz-Date': b'20240522T191748Z', 'X-Amz-Content-SHA256': b'UNSIGNED-PAYLOAD', 'Authorization': b'AWS4-HMAC-SHA256 Credential=AKIATCKANBUOWY4H4D4O/20240522/us-east-1/s3/aws4_request, SignedHeaders=content-md5;host;x-amz-content-sha256;x-amz-date, Signature=b9ad7e3fb549288a48d6295dca73673aa776d7c4d9ca1d1fbb7839268eafcf5b', 'amz-sdk-invocation-id': b'45f0609a-6399-4351-9e0c-a1115dea34d8', 'amz-sdk-request': b'attempt=1', 'Content-Length': '18960'}>
+2024-05-22 13:17:48,860 - botocore.httpsession - DEBUG - Certificate path: /home/saraluz/miniconda3/envs/arquitectura/lib/python3.11/site-packages/certifi/cacert.pem
+2024-05-22 13:17:48,861 - botocore.awsrequest - DEBUG - Waiting for 100 Continue response.
+2024-05-22 13:17:48,930 - botocore.awsrequest - DEBUG - 100 Continue response seen, now sending request body.
+2024-05-22 13:17:49,010 - urllib3.connectionpool - DEBUG - https://itam-proyecto-saraluz.s3.amazonaws.com:443 "PUT /image_398.jpg HTTP/1.1" 200 0
+2024-05-22 13:17:49,010 - botocore.parsers - DEBUG - Response headers: {'x-amz-id-2': 'KLcBlIey72DZVC9Vt3rtD2GCVfyONVuCAl42VWClcNyslMJuAerX9g2NUz1IPt85OhW3shhJrDxBuWY+1L4uKcTYg8fxjAYiACNopDCQ/Co=', 'x-amz-request-id': '554PVBNSX9HADNTE', 'Date': 'Wed, 22 May 2024 19:17:49 GMT', 'x-amz-server-side-encryption': 'AES256', 'ETag': '"a1bc3c0d7332b598b6ff8f8b10d33acb"', 'Server': 'AmazonS3', 'Content-Length': '0'}
+2024-05-22 13:17:49,011 - botocore.parsers - DEBUG - Response body:
+b''
+2024-05-22 13:17:49,011 - botocore.hooks - DEBUG - Event needs-retry.s3.PutObject: calling handler <botocore.retryhandler.RetryHandler object at 0x77ff723debd0>
+2024-05-22 13:17:49,011 - botocore.retryhandler - DEBUG - No retry needed.
+2024-05-22 13:17:49,012 - botocore.hooks - DEBUG - Event needs-retry.s3.PutObject: calling handler <bound method S3RegionRedirectorv2.redirect_from_error of <botocore.utils.S3RegionRedirectorv2 object at 0x77ff710b2b50>>
+2024-05-22 13:17:49,012 - s3transfer.utils - DEBUG - Releasing acquire 0/None
+2024-05-22 13:17:49,013 - src.utils - INFO - Imágenes subidas a S3.
