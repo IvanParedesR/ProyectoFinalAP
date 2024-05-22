@@ -34,27 +34,27 @@
 ## Estructura del repositorio
 
 .
-├── aws_screanshots: capturas de pantalla del proceso para crear los buckets, lambdas, api.
-├── data: imágenes, csvs y pdf
-├── entregables
-├── extract_load_images.py
-├── extract_read_pdf.py
-├── facial-recognition-app
-├── info1.jpg
-├── info2.jpg
-├── info3.jpg
-├── lambda_amber_authentication.py
-├── lambda_amber_registration.py
-├── LICENSE
-├── logs
-├── node_modules
-├── notebooks
-├── README.md
-├── referencias
-├── report
-├── requirements
-├── src
-└── transform_dataframe.py
+├── aws_screanshots: capturas de pantalla del proceso para crear los buckets, lambdas, api.\
+├── data: imágenes, csvs y pdf\
+├── entregables\
+├── extract_load_images.py\
+├── extract_read_pdf.py\
+├── facial-recognition-app\
+├── info1.jpg\
+├── info2.jpg\
+├── info3.jpg\
+├── lambda_amber_authentication.py\
+├── lambda_amber_registration.py\
+├── LICENSE\
+├── logs\
+├── node_modules\
+├── notebooks\
+├── README.md\
+├── referencias\
+├── report\
+├── requirements\
+├── src\
+└── transform_dataframe.py\
 
 ## Arquitectura de la solución
  
